@@ -1,8 +1,19 @@
 var orbit_speed= 5;
 
 if (obj_enemy_soldier.arrival) {
+	if (controller.retreat_timer<=0) {
+		with (obj_enemy_soldier) {
+			if (move_type==MOVE.REVOLVER_RIGHT) {
+				speed = 10;
+				direction = 0;
+				fire = false;
+			}
+		}
+		//After soldiers are given speed and direction, parent object is destroyed
+		instance_destroy(self);
+	}
 	//When Revolver Timer is greater than 0, the enemies are still oscillating up and down.
-	if (revolver_timer>0) {
+	else if (revolver_timer>0) {
 		if (array_length(revolver_soldiers)>1) revolver_timer--;
 		revolver_oscillate_speed+=0.05;
 	
@@ -22,6 +33,7 @@ if (obj_enemy_soldier.arrival) {
 				if (array_length(other.revolver_soldiers)<=1) rotation_order=0;
 			}
 		}
+		
 	}
 	//Once Revolver Timer hits 0, enemies stop oscillating and rotate positions before resuming.
 	else {

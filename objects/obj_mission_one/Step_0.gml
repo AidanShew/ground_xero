@@ -21,24 +21,32 @@ switch (section) {
 	
 	case (4):
 		create_cross();
-		if (cross_spawn_timer<=0) section++;
+		if (cross_spawn_timer<=-180) section++;
 	break;
 	
 	case (5):
 		create_circuit();
-		if (circuit_spawn_timer<=0) section++;
+		if (circuit_spawn_timer<=-400) section++;
 	break;
 	
 	case (6):
-		create_single_spiral(); //Needs exit
+		if (!single_spiral_spawned) {
+			create_single_spiral(); //Needs exit
+			single_spiral_spawned = true;
+		}
+		else if (--single_spiral_timer<=0) {
+			if (instance_exists(obj_enemy_drone)) instance_destroy(obj_enemy_drone);
+			section++;
+		}
 	break;
 	
 	case (7):
-		create_revolver(); //Needs exit
+	if (!revolver_spawned) create_revolver();
+	else if (--retreat_timer <= -180) section++;
 	break;
 	
 	case (8):
-		create_pack(); //Might need exit? Idk
+		//create_pack();
 	break;
 	
 	case (9):

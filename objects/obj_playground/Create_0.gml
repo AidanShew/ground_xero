@@ -17,6 +17,8 @@ swoop_spawn_timer=90;
 circuit_spawn_timer=600;
 circuit_speed=10;
 
+retreat_timer = 540;
+
 section=SECTION.ONE;
 
 global.enemies_off_screen=0;

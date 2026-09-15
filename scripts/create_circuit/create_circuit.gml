@@ -1,5 +1,5 @@
 function create_circuit() {
-	var timer=circuit_spawn_timer;
+	var timer=circuit_spawn_timer--;
 	
 	//Set circuit_spawn_timer to 600
 	if ((timer%15==0)&&(timer>0||timer<-400)) {
@@ -15,6 +15,4 @@ function create_circuit() {
 	circuit_speed+0.03, 
 	10, 
 	(timer<0) ? 20 : 15);
-	
-	circuit_spawn_timer--;
 }

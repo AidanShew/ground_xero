@@ -204,8 +204,7 @@ function soldier_create(amount, move_type, attack_type=noone, red=noone, target_
 			
 			break;
 			
-			case (MOVE.REVOLVER_RIGHT):
-			
+			case (MOVE.REVOLVER_RIGHT):			
 			if (i==0) {
 				enemy.x=1725;
 				enemy.orbit_angle=180;
@@ -246,8 +245,7 @@ function soldier_create(amount, move_type, attack_type=noone, red=noone, target_
 			array_push(obj_revolver_right_p.revolver_soldiers, enemy);
 			break;
 			
-			case (MOVE.REVOLVER_LEFT):
-			
+			case (MOVE.REVOLVER_LEFT):			
 			if (i==0) {
 				enemy.x=195;
 				enemy.orbit_angle=180;

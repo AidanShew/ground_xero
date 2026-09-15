@@ -13,14 +13,27 @@ spawn_timer2=120;
 spawn_timer3=240;
 tracer_section_spawn_timer=2000; //Spawn Timer for Tracer Section
 
-trio_spawned = false //Indicates that trio has started once.
-
 //Spawn Timers
 swoop_spawn_timer = 90; //Required For create_swoop()
+
+trio_spawned = false //Indicates that trio has started once.
+
 helix_spawn_timer = 90; //Required For create_helix()
-cross_spawn_timer = 120; //Required for create_cross()
+
+//Required for create_cross()
+cross_spawn_timer = 120;
 cross_polarity_timer = 30;
-circuit_spawn_timer = 600; //Required for create_circuit()
+
+//Required for create_circuit()
+circuit_spawn_timer = 540;
+circuit_speed=10;
+
 //Required for create_pack();
 pack_spawn_timer = 120;
 pack_iteration = 0;
+
+single_spiral_timer = 1200;
+single_spiral_spawned = false;
+
+revolver_spawned = false;
+retreat_timer = 540;
