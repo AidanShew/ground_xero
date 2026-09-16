@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"section_create",
   "parent":{
-    "name":"Helix (Figure Eight)",
-    "path":"folders/Scripts/Campaign/Campaign Moves/Helix (Figure Eight).yy",
+    "name":"Unused Scripts",
+    "path":"folders/Unused Assets/Unused Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

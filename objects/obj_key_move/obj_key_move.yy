@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Keys",
-    "path":"folders/Objects/Menu Buttons/Keys.yy",
+    "path":"folders/Unused Assets/Unused Objects/Keys.yy",
   },
   "parentObjectId":{
     "name":"obj_key",

@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"section_one",
   "parent":{
-    "name":"Swoop",
-    "path":"folders/Scripts/Campaign/Campaign Moves/Swoop.yy",
+    "name":"Unused Scripts",
+    "path":"folders/Unused Assets/Unused Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

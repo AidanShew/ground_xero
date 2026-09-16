@@ -6,7 +6,7 @@ function attack_curtain_rain(){
 			new_x,
 			i<3 ? (i*100) : ((i-3)*100),
 			"Instances",
-			obj_soldier_bullet)
+			obj_bullet_soldier)
 			bullet.direction=270;
 			bullet.red=i<3 ? !red : red;
 			bullet.speed=25;

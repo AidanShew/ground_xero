@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"attack_pack",
   "parent":{
-    "name":"Enemy Attack",
-    "path":"folders/Scripts/Enemy Attack.yy",
+    "name":"Unused Scripts",
+    "path":"folders/Unused Assets/Unused Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

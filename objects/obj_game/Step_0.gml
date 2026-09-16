@@ -1,5 +1,5 @@
 if (activate_horde_intro) {
-	stars_create();
+	scr_ui_create_stars();
 	if (!phase_one_intro&&!phase_two_intro&&!phase_three_intro&&!phase_four_intro&&!end_of_intro) {
 		phase_one_intro=true;
 	}

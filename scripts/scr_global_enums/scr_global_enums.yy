@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_global_enums",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_global_enums",
+  "parent":{
+    "name":"Misc.",
+    "path":"folders/Scripts/Misc..yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

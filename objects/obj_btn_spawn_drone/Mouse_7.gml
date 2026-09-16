@@ -1,1 +1,1 @@
-drone_create(12, MOVE.ORBIT);
+scr_create_enemy_drone(12, MOVE.ORBIT);

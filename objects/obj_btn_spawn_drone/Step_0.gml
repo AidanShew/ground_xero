@@ -1,4 +1,4 @@
-if (!instance_exists(obj_enemy)) {
+if (!instance_exists(obj_parent_enemy)) {
 	global.enemies_alive=0;
-	drone_create(12, MOVE.ORBIT);
+	scr_create_enemy_drone(12, MOVE.ORBIT);
 }

@@ -6,7 +6,7 @@
   "name":"attack_star",
   "parent":{
     "name":"Attack",
-    "path":"folders/Scripts/Treclops/Attack.yy",
+    "path":"folders/Scripts/Campaign/Campaign Movement/Treclops/Attack.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

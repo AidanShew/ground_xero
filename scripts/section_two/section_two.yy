@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"section_two",
   "parent":{
-    "name":"Trio",
-    "path":"folders/Scripts/Campaign/Campaign Moves/Trio.yy",
+    "name":"Unused Scripts",
+    "path":"folders/Unused Assets/Unused Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -8,7 +8,7 @@ function attack_full_rain(hands){
 				new_x,
 				y,
 				"Instances",
-				obj_soldier_bullet);
+				obj_bullet_soldier);
 				
 				bullet.direction=270;
 				bullet.red=i<3 ? !red : red;
@@ -20,7 +20,7 @@ function attack_full_rain(hands){
 				new_x,
 				y,
 				"Instances",
-				obj_soldier_bullet);
+				obj_bullet_soldier);
 				
 				bullet.direction=270;
 				bullet.red=red;

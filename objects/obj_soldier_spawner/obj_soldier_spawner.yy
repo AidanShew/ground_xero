@@ -9,8 +9,8 @@
   "name":"obj_soldier_spawner",
   "overriddenProperties":[],
   "parent":{
-    "name":"Spawners",
-    "path":"folders/Objects/Spawners.yy",
+    "name":"Unused Objects",
+    "path":"folders/Unused Assets/Unused Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

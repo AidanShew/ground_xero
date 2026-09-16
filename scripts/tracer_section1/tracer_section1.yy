@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"tracer_section1",
   "parent":{
-    "name":"Uncatagorized",
-    "path":"folders/Scripts/Campaign/Campaign Moves/Uncatagorized.yy",
+    "name":"Unused Scripts",
+    "path":"folders/Unused Assets/Unused Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

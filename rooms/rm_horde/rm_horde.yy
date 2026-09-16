@@ -19,8 +19,8 @@
   ],
   "name":"rm_horde",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Unused Rooms",
+    "path":"folders/Unused Assets/Unused Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

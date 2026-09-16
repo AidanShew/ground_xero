@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"FireAlt0",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Unused Sounds",
+    "path":"folders/Unused Assets/Unused Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

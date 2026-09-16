@@ -1,1 +1,1 @@
-if (!instance_exists(obj_tracer)) {instance_create_layer(x,y,"Instances", obj_tracer_spawner);}
+if (!instance_exists(obj_enemy_tracer)) {instance_create_layer(x,y,"Instances", obj_tracer_spawner);}

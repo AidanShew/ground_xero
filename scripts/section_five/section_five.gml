@@ -1,6 +1,6 @@
 function section_five(){
 	if (!spawned){
-		treclops_create();
+		scr_create_enemy_treclops();
 		spawned=true;
 	}
 

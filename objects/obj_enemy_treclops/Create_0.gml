@@ -4,10 +4,10 @@ red=false;
 x=room_width/2;
 y=-50;
 
-var left_hand=instance_create_layer(x,y,"Instances", obj_left_hand);
+var left_hand=instance_create_layer(x,y,"Instances", obj_enemy_treclops_hand_left);
 left_hand.path = [(room_width/2)-400, 200]
 
-var right_hand=instance_create_layer(x,y,"Instances", obj_right_hand);
+var right_hand=instance_create_layer(x,y,"Instances", obj_enemy_treclops_hand_right);
 right_hand.path=[(room_width/2)+400, 200];
 
 fire_counter=0;

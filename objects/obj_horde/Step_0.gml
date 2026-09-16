@@ -1,4 +1,4 @@
-stars_create();
+scr_ui_create_stars();
 if (horde_round>global.highest_round) { global.highest_round=horde_round; }
 
 switch (horde_round) {

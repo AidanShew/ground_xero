@@ -10,8 +10,8 @@
   "name":"obj_mine_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Bullets",
-    "path":"folders/Objects/Bullets.yy",
+    "name":"Unused Objects",
+    "path":"folders/Unused Assets/Unused Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -6,7 +6,7 @@
   "name":"move_corner",
   "parent":{
     "name":"Enemy Movement",
-    "path":"folders/Scripts/Enemy Movement.yy",
+    "path":"folders/Unused Assets/Unused Scripts/Enemy Movement.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

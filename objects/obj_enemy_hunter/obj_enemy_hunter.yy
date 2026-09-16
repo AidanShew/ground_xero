@@ -10,12 +10,12 @@
   "name":"obj_enemy_hunter",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Enemies.yy",
+    "name":"Unused Objects",
+    "path":"folders/Unused Assets/Unused Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_enemy",
-    "path":"objects/obj_enemy/obj_enemy.yy",
+    "name":"obj_parent_enemy",
+    "path":"objects/obj_parent_enemy/obj_parent_enemy.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -20,6 +20,6 @@ switch (move_type) {
 
 switch (attack_type) {
 	case (ATTACK.AIMED):
-	attack_aimed();
+	scr_attack_aimed();
 	break;
 }

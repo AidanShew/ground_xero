@@ -1,1 +1,1 @@
-stars_create();
+scr_ui_create_stars();

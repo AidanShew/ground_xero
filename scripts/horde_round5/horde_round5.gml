@@ -10,9 +10,9 @@ function horde_round5(){
 		spawn_wave=irandom(10);
 		if (instance_exists(obj_enemy_soldier)) { instance_destroy(obj_enemy_soldier); }
 		if (instance_exists(obj_wp)) { instance_destroy(obj_wp); }
-		if (instance_exists(obj_tracer)) { instance_destroy(obj_tracer); }
+		if (instance_exists(obj_enemy_tracer)) { instance_destroy(obj_enemy_tracer); }
 		if (instance_exists(obj_enemy_hunter)) { instance_destroy(obj_enemy_hunter); }
-		if (instance_exists(obj_exo)) { instance_destroy(obj_exo); }
+		if (instance_exists(obj_enemy_exo)) { instance_destroy(obj_enemy_exo); }
 	
 		if (spawn_wave==1) {
 			instance_create_layer(x,y,"Instances", obj_tracer_spawner);

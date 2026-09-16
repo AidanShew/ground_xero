@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_power_up_assigner",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_power_up_assigner",
+  "parent":{
+    "name":"Misc.",
+    "path":"folders/Scripts/Misc..yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -6,7 +6,7 @@ revolver_soldiers=[];
 star_drones_left=[];
 star_drones_right=[]; //Array for throwing drones
 
-soldier_create(4, MOVE.TRIO);
+scr_create_enemy_soldier(4, MOVE.TRIO);
 
 x=300;
 y=500;

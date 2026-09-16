@@ -1,4 +1,4 @@
-set_ratio();
+scr_ui_set_ratio();
 
 if (instance_exists(obj_pause_manager)) {
 	with (obj_pause_manager) {

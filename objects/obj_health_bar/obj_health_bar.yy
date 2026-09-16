@@ -9,8 +9,8 @@
   "name":"obj_health_bar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Unused Objects",
+    "path":"folders/Unused Assets/Unused Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

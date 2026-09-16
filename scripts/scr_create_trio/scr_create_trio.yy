@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_create_trio",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_create_trio",
+  "parent":{
+    "name":"Trio",
+    "path":"folders/Scripts/Campaign/Campaign Movement/Trio.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

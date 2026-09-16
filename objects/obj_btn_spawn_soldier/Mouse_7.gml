@@ -1,1 +1,1 @@
-soldier_create(8, MOVE.DICE, ATTACK.SPREAD);
+scr_create_enemy_soldier(8, MOVE.DICE, ATTACK.SPREAD);

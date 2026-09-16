@@ -8,7 +8,7 @@ function attack_partial_rain(hands){
 				bullet_x,
 				y,
 				"Instances",
-				obj_soldier_bullet);
+				obj_bullet_soldier);
 				bullet.direction=270;
 				bullet.red=red;
 				bullet.speed=25
@@ -21,7 +21,7 @@ function attack_partial_rain(hands){
 				bullet_x,
 				y,
 				"Instances",
-				obj_soldier_bullet);
+				obj_bullet_soldier);
 				bullet.direction=270;
 				bullet.red=red;
 				bullet.speed=25;

@@ -9,8 +9,8 @@
   "name":"obj_controls",
   "overriddenProperties":[],
   "parent":{
-    "name":"Background Processes",
-    "path":"folders/Objects/Background Processes.yy",
+    "name":"Unused Objects",
+    "path":"folders/Unused Assets/Unused Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

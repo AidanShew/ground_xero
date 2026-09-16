@@ -9,12 +9,12 @@
   "name":"obj_enemy_drone",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Enemies.yy",
+    "name":"Enemy Objects",
+    "path":"folders/Objects/Enemies/Enemy Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_enemy",
-    "path":"objects/obj_enemy/obj_enemy.yy",
+    "name":"obj_parent_enemy",
+    "path":"objects/obj_parent_enemy/obj_parent_enemy.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

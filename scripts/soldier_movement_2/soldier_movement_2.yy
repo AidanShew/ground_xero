@@ -6,7 +6,7 @@
   "name":"soldier_movement_2",
   "parent":{
     "name":"Soldier Movement",
-    "path":"folders/Scripts/Soldier/Soldier Movement.yy",
+    "path":"folders/Unused Assets/Unused Scripts/Soldier/Soldier Movement.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

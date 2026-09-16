@@ -1,1 +1,1 @@
-if (!instance_exists(obj_exo)) { exo_create(); }
+if (!instance_exists(obj_enemy_exo)) { exo_create(); }

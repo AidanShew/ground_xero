@@ -1,11 +1,11 @@
 switch (move_type) {
 	case (MOVE.SWOOP_RIGHT):
-	move_swoop();
+	scr_move_swoop();
 	break;
 }
 
 switch (attack_type) {
 	case (ATTACK.CAKE):
-	attack_cake();
+	scr_attack_cake();
 	break;
 }

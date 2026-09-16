@@ -22,30 +22,30 @@ switch (move_type) {
 	
 	case MOVE.SWOOP_RIGHT:
 	case MOVE.SWOOP_LEFT:
-	move_swoop();
+	scr_move_swoop();
 	break;
 	
 	case MOVE.TRIO:
-	move_trio_soldier();
+	scr_move_trio_soldier();
 	break;
 	
 	case MOVE.HELIX_LEFT:
 	case MOVE.HELIX_RIGHT:
-	move_helix();
+	scr_move_helix();
 	break;
 	
 	case MOVE.CROSS_LEFT:
 	case MOVE.CROSS_RIGHT:
-	move_cross();
+	scr_move_cross();
 	break;
 	
 	case MOVE.CIRCUIT_RIGHT:
 	case MOVE.CIRCUIT_LEFT:
-	move_circuit();
+	scr_move_circuit();
 	break;
 	
 	case MOVE.HELIX:
-	move_helix();
+	scr_move_helix();
 	break;
 	
 	case MOVE.TARGET:
@@ -55,7 +55,7 @@ switch (move_type) {
 	
 	case MOVE.PACK_RIGHT:
 	fire=y<=(room_height*.75);
-	move_pack_right();
+	scr_move_pack_right();
 	break;
 	
 	case MOVE.PACK_LEFT:
@@ -83,7 +83,7 @@ if (fire) {
 		break;
 		
 		case ATTACK.AIMED:
-		attack_aimed();
+		scr_attack_aimed();
 		//attack_pack();
 		break;
 	}

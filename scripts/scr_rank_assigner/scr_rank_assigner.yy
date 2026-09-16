@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_rank_assigner",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_rank_assigner",
+  "parent":{
+    "name":"Misc.",
+    "path":"folders/Scripts/Misc..yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

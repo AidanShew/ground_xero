@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"tre_calibrate",
   "parent":{
-    "name":"Uncatagorized",
-    "path":"folders/Scripts/Campaign/Campaign Moves/Uncatagorized.yy",
+    "name":"Treclops",
+    "path":"folders/Scripts/Campaign/Campaign Movement/Treclops.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

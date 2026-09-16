@@ -7,7 +7,7 @@ function attack_star(){
 			if (fire_counter>=15) {
 				fire_counter=0;
 				index++;
-				var bullet=instance_create_layer(x,y+200,"Instances",obj_star_bullet);
+				var bullet=instance_create_layer(x,y+200,"Instances",obj_bullet_treclops_star);
 				bullet.orbit_angle=(index*120);
 				bullet_star[index]=bullet;
 			}

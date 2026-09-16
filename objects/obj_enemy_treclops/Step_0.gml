@@ -46,7 +46,7 @@ switch (global.tre_phase) {
 		show_debug_message("Phase 4");
 		tre_calibrate();
 		if (fire) {
-			if (instance_exists(obj_right_hand)&&(obj_right_hand.x<x-50||obj_right_hand.x>x+50)) attack_type=TRECLOPS_ATTACK.STAR;
+			if (instance_exists(obj_enemy_treclops_hand_right)&&(obj_enemy_treclops_hand_right.x<x-50||obj_enemy_treclops_hand_right.x>x+50)) attack_type=TRECLOPS_ATTACK.STAR;
 			else attack_type=TRECLOPS_ATTACK.NONE;
 		}
 	break;

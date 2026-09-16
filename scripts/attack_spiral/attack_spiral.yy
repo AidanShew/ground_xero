@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"attack_spiral",
   "parent":{
-    "name":"Soldier Attack",
-    "path":"folders/Scripts/Soldier/Soldier Attack.yy",
+    "name":"Unused Scripts",
+    "path":"folders/Unused Assets/Unused Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

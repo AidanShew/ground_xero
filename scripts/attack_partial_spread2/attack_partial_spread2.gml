@@ -11,7 +11,7 @@ function attack_partial_spread2(){
 	
 		if (fire_counter_two>=1) {
 			for (var i=0; i<10; i++) {
-				var bullet=instance_create_layer(x,y,"Instances",obj_red_treclops_bullet);
+				var bullet=instance_create_layer(x,y,"Instances",obj_bullet_treclops_normal_red);
 				bullet.red=red;
 				if (!bullet.red) bullet.sprite_index=spr_smll_blue_bullet;
 				bullet.direction=dir-(i*3);

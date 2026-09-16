@@ -17,7 +17,7 @@ Firefight was previously available however it has been hidden from the main menu
 ## Manual
 #### Installation and Running Far From Eden: Ground Xero
 1. Install GameMaker (LTS 2026 is recommended) from gamemaker.io
-2. Download/Clone this repository using `git clone https://github.com/AidanShew/ground_xero optional_new_folder_name`
+2. Download/Clone this repository using `git clone https://github.com/AidanShew/ground_xero`
     - Alternatively you can simply download the repository by clicking the green Code button then downloading the zip file.
 3. In the downloaded repository, open "Far From Eden Ground Xero.yyp"
 4. Once the project opens, press F5 (Or click the play button at the top) to launch the game.

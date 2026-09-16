@@ -68,7 +68,7 @@ switch (tracer_phase) {
 		}
 		
 		if (!triond_spawned) {
-			create_trio_nd();
+			scr_create_trio_nd();
 			triond_spawned=true;
 		}
 	break;

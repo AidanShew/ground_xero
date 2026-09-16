@@ -9,12 +9,12 @@
   "name":"obj_exo_bullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Bullets",
-    "path":"folders/Objects/Bullets.yy",
+    "name":"Unused Objects",
+    "path":"folders/Unused Assets/Unused Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_enemy_bullet_p",
-    "path":"objects/obj_enemy_bullet_p/obj_enemy_bullet_p.yy",
+    "name":"obj_bullet_parent_enemy",
+    "path":"objects/obj_bullet_parent_enemy/obj_bullet_parent_enemy.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Spawn Buttons",
-    "path":"folders/Objects/Spawn Buttons.yy",
+    "path":"folders/Unused Assets/Unused Objects/Spawn Buttons.yy",
   },
   "parentObjectId":null,
   "persistent":false,

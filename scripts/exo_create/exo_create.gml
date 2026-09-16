@@ -5,7 +5,7 @@ function exo_create(){
 		
 		else { spawn_x=room_width+15; }
 		
-		var enemy=instance_create_layer(spawn_x, display_get_gui_height()*0.5, "Instances", obj_exo);
+		var enemy=instance_create_layer(spawn_x, display_get_gui_height()*0.5, "Instances", obj_enemy_exo);
 		instance_create_layer(x,y,"Instances", obj_exo_fire_manager);
 		enemy.position=i;
 		ds_list_add(obj_exo_fire_manager.fire_queue, enemy);

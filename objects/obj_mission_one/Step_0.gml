@@ -31,7 +31,7 @@ switch (section) {
 	
 	case (6):
 		if (!single_spiral_spawned) {
-			create_single_spiral(); //Needs exit
+			scr_create_single_spiral(); //Needs exit
 			single_spiral_spawned = true;
 		}
 		else if (--single_spiral_timer<=0) {
@@ -42,14 +42,14 @@ switch (section) {
 	
 	case (7):
 		if (!revolver_spawned) {
-			create_revolver();
+			scr_create_revolver();
 			revolver_spawned=true;
 		}
 		else if (--retreat_timer <= -180) section++;
 	break;
 	
 	case (8):
-		create_pack();
+		scr_create_pack();
 		if (pack_iteration>=4) {
 			section++;
 		}
@@ -57,7 +57,7 @@ switch (section) {
 	
 	case (9):
 		if (!tracer_spawned) {
-			create_tracer_section();
+			scr_create_tracer_section();
 			tracer_spawned=true;
 		}
 		else if (tracer_spawned && !instance_exists(obj_controller_tracer)) {
@@ -66,7 +66,7 @@ switch (section) {
 	break;
 	
 	case (10):
-		treclops_create();
+		scr_create_enemy_treclops();
 		if (treclops_spawned && !instance_exists(obj_enemy_treclops)) {
 			section++;
 		}

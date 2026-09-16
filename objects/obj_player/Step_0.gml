@@ -43,7 +43,7 @@ else if (sprite_index == spr_to_red) {
 //Player shooting
 if (keyboard_check(vk_up)&&fire_counter>=fire_limit&&!megadrive) {
 	for (var i=0; i<2; i++) {
-		bullet=instance_create_layer(x,y,"Instances",obj_player_bullet);
+		bullet=instance_create_layer(x,y,"Instances",obj_bullet_player_blue);
 		bullet.left=i==1 ? true : false;
 	}
 	
@@ -101,11 +101,11 @@ if (overshield) {
 	
 if (megadrive) {
 	sprite_index=spr_player_megadrive;
-	fire_sound=choose(FireDeep1, FireDeep2, FireDeep3, Fire0, Fire1, Fire2);
+	fire_sound=choose(snd_fire_low, snd_fire_lower, snd_fire_lowest, snd_fire_normal, snd_fire_high, snd_fire_higher);
 	audio_play_sound(fire_sound, 1, false);
 	
 	function fire_shot(side) {
-		shot=instance_create_layer(x,y,"Instances", obj_player_bullet);
+		shot=instance_create_layer(x,y,"Instances", obj_bullet_player_blue);
 		variable_instance_set(shot, side, true);
 		shot.direction=90;
 	}
