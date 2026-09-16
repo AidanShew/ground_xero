@@ -41,12 +41,18 @@ switch (section) {
 	break;
 	
 	case (7):
-	if (!revolver_spawned) create_revolver();
-	else if (--retreat_timer <= -180) section++;
+		if (!revolver_spawned) {
+			create_revolver();
+			revolver_spawned=true;
+		}
+		else if (--retreat_timer <= -180) section++;
 	break;
 	
 	case (8):
-		//create_pack();
+		create_pack();
+		if (pack_iteration>=4 && pack_spawn_timer <=0) {
+			section++;
+		}
 	break;
 	
 	case (9):

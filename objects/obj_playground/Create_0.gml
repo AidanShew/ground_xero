@@ -11,6 +11,7 @@ spawn_timer2=120;
 
 pack_spawn_timer=120;
 pack_iteration=0;
+spawn_pack=true;
 
 swoop_spawn_timer=90;
 

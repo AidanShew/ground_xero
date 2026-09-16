@@ -1,18 +1,23 @@
-function create_pack(){
-	var timer = pack_spawn_timer;
-	
+function create_pack(){	
 	if (pack_iteration<4) {
-		if (timer>0&&timer%120==0) {
+		if (spawn_pack) {
+			show_debug_message("Supposed to spawn...");
 			soldier_create(
 			3, 
-			pack_iteration%2==0 ? MOVE.PACK_LEFT : MOVE.PACK_RIGHT, 
+			pack_iteration%2 == 0 ? MOVE.PACK_LEFT : MOVE.PACK_RIGHT, 
 			ATTACK.AIMED, 
-			pack_iteration%2==0 ? false : true);
+			pack_iteration%2 == 0 ? false : true);
+			
+			spawn_pack = false;
 		}
-		timer--;
-		if (timer<=0) {
+
+		if (pack_spawn_timer <= 0) {
 			pack_iteration++;
-			timer=120;
+			pack_spawn_timer = 120;
+			
+			spawn_pack = true;
 		}
+		
+		pack_spawn_timer--;
 	}
 }

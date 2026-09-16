@@ -31,6 +31,7 @@ circuit_speed=10;
 //Required for create_pack();
 pack_spawn_timer = 120;
 pack_iteration = 0;
+spawn_pack=true;
 
 single_spiral_timer = 1200;
 single_spiral_spawned = false;

@@ -1,6 +1,6 @@
 function move_revolver(){
 	sprite_index=red ? spr_soldier_red : spr_soldier_blue;
-	if (obj_playground.retreat_timer > 0) {
+	if (obj_mission_one.retreat_timer > 0) {
 		if (!arrival) { //Hasn't reached initial_target_x
 			if (move_type==MOVE.REVOLVER_RIGHT) {
 				speed= x>initial_target_x ? 10 : 0;

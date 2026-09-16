@@ -4,12 +4,10 @@ if (!spawned) {
 	//create_cross();
 	//create_single_spiral();
 	//create_trio();
-	create_revolver();
+	//create_revolver();
 	spawned=true;
 }
-if (--retreat_timer <= -540) {
-	//section++;
-}
+create_pack();
 //create_tracer_section();
 //create_pack();
 //create_helix();

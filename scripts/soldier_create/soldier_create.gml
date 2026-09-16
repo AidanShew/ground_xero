@@ -91,6 +91,8 @@ function soldier_create(amount, move_type, attack_type=noone, red=noone, target_
 			
 			case (MOVE.CIRCUIT_RIGHT):
 			case (MOVE.CIRCUIT_LEFT):
+			enemy.enemy_health=10;
+			
 			enemy.y=100;
 			var path_x1;
 			var path_x2;
@@ -181,7 +183,7 @@ function soldier_create(amount, move_type, attack_type=noone, red=noone, target_
 			case (MOVE.PACK_LEFT):
 			enemy.red=red;
 			enemy.direction=270;
-			enemy.speed=10;
+			enemy.speed = pack_iteration>=2 ? 15 : 10;
 			enemy.move_type=move_type;
 			enemy.attack_type=attack_type;
 			enemy.y= i==0 ? -50 : -150;
@@ -194,7 +196,7 @@ function soldier_create(amount, move_type, attack_type=noone, red=noone, target_
 			case(MOVE.PACK_RIGHT):
 			enemy.red=red;
 			enemy.direction=270;
-			enemy.speed=10;
+			enemy.speed = pack_iteration>=2 ? 15 : 10;
 			enemy.attack_type=attack_type;
 			enemy.move_type=MOVE.PACK_RIGHT;
 			enemy.y= i==0 ? -50 : -150;
