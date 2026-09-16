@@ -5,6 +5,11 @@ switch (section) {
 	break;
 	
 	case (2):
+		create_helix();
+		if (helix_spawn_timer<=-180) section++;
+	break;
+	
+	case (3):
 		if (!trio_spawned) {
 			create_trio();
 			trio_spawned=true;
@@ -12,11 +17,6 @@ switch (section) {
 		else if (trio_spawned&&!instance_exists(obj_controller_trio)) {
 			section++;
 		}
-	break;
-	
-	case (3):
-		create_helix();
-		if (helix_spawn_timer<=-180) section++;
 	break;
 	
 	case (4):
@@ -58,6 +58,7 @@ switch (section) {
 	case (9):
 		if (!tracer_spawned) {
 			create_tracer_section();
+			tracer_spawned=true;
 		}
 		else if (tracer_spawned && !instance_exists(obj_controller_tracer)) {
 			section++;
@@ -65,6 +66,13 @@ switch (section) {
 	break;
 	
 	case (10):
-		instance_destroy();
+		treclops_create();
+		if (treclops_spawned && !instance_exists(obj_enemy_treclops)) {
+			section++;
+		}
 	break;
+	
+	case (11):
+		instance_destroy(self);
+		break;
 }

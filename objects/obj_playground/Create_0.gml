@@ -29,3 +29,6 @@ spawned=false;
 //create_trio();
 //create_trio_nd();
 create_tracer_section();
+/*
+treclops_spawned=false;
+treclops_create();

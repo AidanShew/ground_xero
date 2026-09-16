@@ -1,5 +1,4 @@
 tracer_phase=1;
-trio_spawned=false;
-no_drone=false;
+triond_spawned=false;
 
 tracer_spawn_timer=120;

@@ -38,3 +38,7 @@ single_spiral_spawned = false;
 
 revolver_spawned = false;
 retreat_timer = 540;
+
+tracer_spawned = false;
+
+treclops_spawned=false;

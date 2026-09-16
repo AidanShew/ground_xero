@@ -2,7 +2,7 @@ starting_enemy_health=1000;
 enemy_health=starting_enemy_health;
 red=false;
 x=room_width/2;
-y=-150;
+y=-50;
 
 var left_hand=instance_create_layer(x,y,"Instances", obj_left_hand);
 left_hand.path = [(room_width/2)-400, 200]

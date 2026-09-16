@@ -91,7 +91,7 @@ function soldier_create(amount, move_type, attack_type=noone, red=noone, target_
 			
 			case (MOVE.CIRCUIT_RIGHT):
 			case (MOVE.CIRCUIT_LEFT):
-			enemy.enemy_health=10;
+			enemy.enemy_health = 10;
 			
 			enemy.y=100;
 			var path_x1;

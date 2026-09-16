@@ -62,12 +62,14 @@ switch (tracer_phase) {
 			tracer_create(TRACER_MOVE.FROM_TOP_LEFT, 1);
 			tracer_create(TRACER_MOVE.FROM_TOP_RIGHT, 1);
 		}
-		if (!trio_spawned) {
-			create_trio_nd();
-			trio_spawned=true;
-		}
-		else if (trio_spawned&&!instance_exists(obj_controller_trio_nd)) {
+		
+		if (triond_spawned && !instance_exists(obj_controller_trio_nd)) {
 			tracer_phase++;
+		}
+		
+		if (!triond_spawned) {
+			create_trio_nd();
+			triond_spawned=true;
 		}
 	break;
 		
@@ -76,8 +78,11 @@ switch (tracer_phase) {
 	break;
 }
 
-if (tracer_phase < 11 && --tracer_spawn_timer <=-60) {
+if (tracer_phase < 10 && --tracer_spawn_timer <=-60) {
 	tracer_phase++;
+	tracer_spawn_timer=120;
+}
+else if (tracer_phase >= 10 && --tracer_spawn_timer <= 0) {
 	tracer_spawn_timer=120;
 }
 
