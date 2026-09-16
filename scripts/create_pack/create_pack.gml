@@ -1,4 +1,5 @@
 function create_pack(){	
+	show_debug_message("Pack Timer: "+string(pack_spawn_timer)+"\nIteration: "+string(pack_iteration));
 	if (pack_iteration<4) {
 		if (spawn_pack) {
 			show_debug_message("Supposed to spawn...");

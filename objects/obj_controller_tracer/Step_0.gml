@@ -62,6 +62,13 @@ switch (tracer_phase) {
 			tracer_create(TRACER_MOVE.FROM_TOP_LEFT, 1);
 			tracer_create(TRACER_MOVE.FROM_TOP_RIGHT, 1);
 		}
+		if (!trio_spawned) {
+			create_trio_nd();
+			trio_spawned=true;
+		}
+		else if (trio_spawned&&!instance_exists(obj_controller_trio_nd)) {
+			tracer_phase++;
+		}
 	break;
 		
 	case (11):
@@ -69,7 +76,7 @@ switch (tracer_phase) {
 	break;
 }
 
-if (--tracer_spawn_timer <=-60) {
+if (tracer_phase < 11 && --tracer_spawn_timer <=-60) {
 	tracer_phase++;
 	tracer_spawn_timer=120;
 }

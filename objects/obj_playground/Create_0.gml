@@ -27,3 +27,5 @@ global.enemies_off_screen=0;
 spawned=false;
 
 //create_trio();
+//create_trio_nd();
+create_tracer_section();

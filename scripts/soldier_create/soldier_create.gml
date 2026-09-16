@@ -289,7 +289,7 @@ function soldier_create(amount, move_type, attack_type=noone, red=noone, target_
 			break;
 						
 			case (MOVE.TRIO):
-			enemy.controller=obj_controller_trio;
+			enemy.controller=self;
 			
 			if (i==3) { //Left
 				enemy.orbit_angle=180;

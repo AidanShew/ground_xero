@@ -3,12 +3,10 @@ if (!spawned) {
 	//create_double_spiral();
 	//create_cross();
 	//create_single_spiral();
-	//create_trio();
 	//create_revolver();
 	spawned=true;
 }
-create_pack();
-//create_tracer_section();
+//create_pack();
 //create_pack();
 //create_helix();
 /*

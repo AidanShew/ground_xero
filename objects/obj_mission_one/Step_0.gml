@@ -50,12 +50,21 @@ switch (section) {
 	
 	case (8):
 		create_pack();
-		if (pack_iteration>=4 && pack_spawn_timer <=0) {
+		if (pack_iteration>=4) {
 			section++;
 		}
 	break;
 	
 	case (9):
-		create_tracer_section(); //Keeps looping to the beginning after iterating completely
+		if (!tracer_spawned) {
+			create_tracer_section();
+		}
+		else if (tracer_spawned && !instance_exists(obj_controller_tracer)) {
+			section++;
+		}
+	break;
+	
+	case (10):
+		instance_destroy();
 	break;
 }

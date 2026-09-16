@@ -8,9 +8,6 @@ star_drones_right=[]; //Array for throwing drones
 
 soldier_create(4, MOVE.TRIO);
 
-drone_create(3, MOVE.TRIO_RIGHT);
-drone_create(3, MOVE.TRIO_LEFT);
-
 x=300;
 y=500;
 

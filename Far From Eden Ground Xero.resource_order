@@ -15,6 +15,7 @@
   "ResourceOrderSettings":[
     {"name":"ft_debug","order":1,"path":"fonts/ft_debug/ft_debug.yy",},
     {"name":"obj_controller_tracer","order":8,"path":"objects/obj_controller_tracer/obj_controller_tracer.yy",},
+    {"name":"obj_controller_trio_nd","order":9,"path":"objects/obj_controller_trio_nd/obj_controller_trio_nd.yy",},
     {"name":"obj_controller_trio","order":7,"path":"objects/obj_controller_trio/obj_controller_trio.yy",},
     {"name":"obj_enemy_treclops","order":1,"path":"objects/obj_enemy_treclops/obj_enemy_treclops.yy",},
     {"name":"obj_left_hand","order":2,"path":"objects/obj_left_hand/obj_left_hand.yy",},
@@ -38,6 +39,7 @@
     {"name":"attack_treclops","order":4,"path":"scripts/attack_treclops/attack_treclops.yy",},
     {"name":"create_double_spiral","order":2,"path":"scripts/create_double_spiral/create_double_spiral.yy",},
     {"name":"create_swoop","order":1,"path":"scripts/create_swoop/create_swoop.yy",},
+    {"name":"create_trio_nd","order":4,"path":"scripts/create_trio_nd/create_trio_nd.yy",},
     {"name":"move_circuit","order":1,"path":"scripts/move_circuit/move_circuit.yy",},
     {"name":"move_cross","order":1,"path":"scripts/move_cross/move_cross.yy",},
     {"name":"move_dice","order":3,"path":"scripts/move_dice/move_dice.yy",},
