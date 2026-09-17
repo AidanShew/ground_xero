@@ -131,13 +131,13 @@ switch (attack_type) {
 	// ***PHASE 4 ATTACK***
 	case (TRECLOPS_ATTACK.BLOCK):
 		show_debug_message("Hand Attack Type: Block");
-		if (instance_exists(obj_bullet_player_blue)) {
-			if (point_distance(x,y, obj_bullet_player_blue.x, mother.y+200)<=15) {
+		if (instance_exists(obj_bullet_player)) {
+			if (point_distance(x,y, obj_bullet_player.x, mother.y+200)<=15) {
 				//attack_spread();
 				speed=0;
 			}
 			else {
-				direction=point_direction(x,y, obj_bullet_player_blue.x, mother.y+200);
+				direction=point_direction(x,y, obj_bullet_player.x, mother.y+200);
 				image_angle=direction;
 				speed=15;
 			}

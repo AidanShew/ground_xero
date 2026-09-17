@@ -33,8 +33,6 @@ Firefight was previously available however it has been hidden from the main menu
 - 'D': Move right
 ###### Combat
 - 'Up Arrow Key': Shoot bullets
-- 'Left Arrow Key': Decrease bullet occilation
-- 'Right Arrow Key': Increase bullet occilation
 - 'Down Arrow Key': Change color polarity (Red/Blue)
 ###### General
 - 'Esc': Pause the game

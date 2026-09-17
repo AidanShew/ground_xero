@@ -1,65 +1,77 @@
-fire_counter++;
+/*
+	+-------------------+
+	|	PLAYER - STEP	|
+	+-------------------+
+	
+	Note: Step Events occur every frame.
+	
+	Sections:
+	* Movement
+	* Sprite
+	* Shooting
+	* Combos
+	* Power-Ups
+*/
 
-//Player core movement
+// +--------------MOVEMENT--------------+
+
+//If negative, player is moving left
 move_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+
+//If negative, player is moving up
 move_y = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
 x += move_x * player_speed;
 y += move_y * player_speed;
 
+hsp = move_x * player_speed;
+vsp = move_y * player_speed;
 
-/*
-if (sprite_index!=spr_to_blue||sprite_index!=spr_to_red) {
-	if (move_x < 0) {
-		if (!red) sprite_index=spr_player_left;
-		else sprite_index=spr_player_red_left;
-	}
-	else if (move_x > 0) {
-		if (!red) sprite_index = spr_player_right;
-		else sprite_index=spr_player_red_right;
-	}
+//Keeps player within boundaries
+obj_player.x = clamp(x, 545, room_width-545);
+obj_player.y = clamp(y, 30, room_height-25);
+
+
+// +--------------SPRITE--------------+
+
+if ((sprite_index == spr_to_blue) && (image_index >= image_number - 1)) {
+    sprite_index = spr_player_big;
+    image_speed	= 0;
 }
-*/
-
-if (sprite_index == spr_to_blue) {
-
-    if (image_index >= image_number - 1) {
-
-        sprite_index = spr_player;
-
-        image_speed = 0;
-    }
-}
-else if (sprite_index == spr_to_red) {
-
-    if (image_index >= image_number - 1) {
-
-        sprite_index = spr_player_red;
-
-        image_speed = 0;
-    }
+else if ((sprite_index == spr_to_red) && (image_index >= image_number - 1)) {
+    sprite_index = spr_player_red;
+    image_speed = 0;
 }
 
-//Player shooting
-if (keyboard_check(vk_up)&&fire_counter>=fire_limit&&!megadrive) {
+
+// +--------------SHOOTING--------------+
+
+if (keyboard_check(vk_up) && fire_counter++ >= 2 && !megadrive) {
 	for (var i=0; i<2; i++) {
-		bullet=instance_create_layer(x,y,"Instances",obj_bullet_player_blue);
-		bullet.left=i==1 ? true : false;
+		var bullet=instance_create_layer(i==0 ? x-10 : x+10,y-10,"Instances",obj_bullet_player);
+		bullet.damage = damage;
 	}
+		
 	
-	//fire_sound= red ? choose(FireDeep1, FireDeep2, FireDeep3) : choose(Fire0, Fire1, Fire2);
-	//audio_play_sound(fire_sound, 1, false);
+	//var sound = red ? choose(snd_explosion_normal, snd_explosion_low, snd_explosion_lower) : choose(snd_explosion_normal, snd_explosion_high);	
+	//audio_play_sound(sound, 1, 0);
+	
 	fire_counter=0;
 }
 
-//Combo
+
+// +--------------COMBOS--------------+
+
 if (--combo_timer<=0) {
 	combo_timer=0;
 	multiplier+=combo;
 	combo=0;
 }
 
-//Power-ups
+
+// +--------------POWER-UPS--------------+
+
+//Megadrive pickup
 if (place_meeting(x, y, obj_megadrive)&&!overshield) {
 	obj_battle_feed.battle_message="Picked up Mega Drive!"
 	obj_battle_feed.new_message=true;
@@ -72,6 +84,7 @@ if (place_meeting(x, y, obj_megadrive)&&!overshield) {
 	instance_destroy(obj_megadrive);
 }
 
+//Overshield pickup
 if (place_meeting(x, y, obj_overshield)&&!megadrive) {
 	obj_battle_feed.battle_message="Picked up Overshield!"
 	obj_battle_feed.new_message=true;
@@ -84,12 +97,14 @@ if (place_meeting(x, y, obj_overshield)&&!megadrive) {
 	instance_destroy(obj_overshield);
 }
 
+//Immunity timer
 if (immunity_timer>0) {
 	immunity=true;
 	//immunity_timer--;
 }
 else immunity=false;
 
+//Overshield attributes
 if (overshield) {
 	immortal=overshield;
 	if (--pup_timer<=0) {
@@ -98,14 +113,15 @@ if (overshield) {
 		pup_timer=default_pup_time;
 	}
 }
-	
+
+//Megadrive attributes
 if (megadrive) {
 	sprite_index=spr_player_megadrive;
 	fire_sound=choose(snd_fire_low, snd_fire_lower, snd_fire_lowest, snd_fire_normal, snd_fire_high, snd_fire_higher);
 	audio_play_sound(fire_sound, 1, false);
 	
 	function fire_shot(side) {
-		shot=instance_create_layer(x,y,"Instances", obj_bullet_player_blue);
+		shot=instance_create_layer(x,y,"Instances", obj_bullet_player);
 		variable_instance_set(shot, side, true);
 		shot.direction=90;
 	}
@@ -121,7 +137,3 @@ if (megadrive) {
 		pup_timer=default_pup_time;
 	}
 }
-
-//To make player stay in boundaries
-obj_player.x=clamp(x, 545, room_width-545);
-obj_player.y=clamp(y, 30, room_height-25);

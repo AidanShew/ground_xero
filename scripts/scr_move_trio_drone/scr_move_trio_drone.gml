@@ -2,7 +2,7 @@ function move_trio_drone(){
 	if (arrived&&obj_controller_trio.move_timer>0) {
 		if (is_thrown) {
 			if (instance_exists(obj_player)&&homing_timer-->0) direction=point_direction(x,y, obj_player.x, obj_player.y);
-			speed=20;
+			speed=17;
 		}
 		else {
 			orbit_angle += 10;
@@ -20,7 +20,7 @@ function move_trio_drone(){
 		}
 	}
 	else {
-		speed=-20;
+		speed=-17;
 		direction=point_direction(x,y,path[0], path[1]);
 	}
 }
