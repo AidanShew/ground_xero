@@ -1,10 +1,8 @@
-if ((variable_instance_exists(self, red)) && (self.red==other.red)) {
-	enemy_health-=other.damage;
+enemy_health-=other.damage;
 	
-	//Plays sound effect
-	var sound=choose(snd_explosion_normal, snd_explosion_high, snd_explosion_low, snd_explosion_lower);
-	audio_play_sound(sound, 1, false);
-}
+//Plays sound effect
+var sound=choose(snd_explosion_normal, snd_explosion_high, snd_explosion_low, snd_explosion_lower);
+audio_play_sound(sound, 1, false);
 
 instance_destroy(other);
 

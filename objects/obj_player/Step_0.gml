@@ -48,7 +48,7 @@ else if ((sprite_index == spr_to_red) && (image_index >= image_number - 1)) {
 
 if (keyboard_check(vk_up) && fire_counter++ >= 2 && !megadrive) {
 	for (var i=0; i<2; i++) {
-		var bullet=instance_create_layer(i==0 ? x-10 : x+10,y-10,"Instances",obj_bullet_player);
+		var bullet = instance_create_layer(i==0 ? x-10 : x+10,y-10,"Instances",obj_bullet_player);
 		bullet.damage = damage;
 	}
 		

@@ -1,8 +1,8 @@
 {
   "FolderOrderSettings":[
     {"name":"Enemy Controllers","order":10,"path":"folders/Objects/Enemies/Enemy Controllers.yy",},
-    {"name":"Enemy Parents","order":11,"path":"folders/Objects/Enemies/Enemy Parents.yy",},
     {"name":"Enemy Objects","order":12,"path":"folders/Objects/Enemies/Enemy Objects.yy",},
+    {"name":"Enemy Parents","order":11,"path":"folders/Objects/Enemies/Enemy Parents.yy",},
     {"name":"Circuit","order":7,"path":"folders/Scripts/Campaign/Campaign Movement/Circuit.yy",},
     {"name":"Cross","order":2,"path":"folders/Scripts/Campaign/Campaign Movement/Cross.yy",},
     {"name":"Helix (Figure Eight)","order":1,"path":"folders/Scripts/Campaign/Campaign Movement/Helix (Figure Eight).yy",},

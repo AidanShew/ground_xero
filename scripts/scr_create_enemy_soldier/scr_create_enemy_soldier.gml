@@ -3,12 +3,6 @@ function scr_create_enemy_soldier(amount, move_type, attack_type=noone, red=noon
 		var enemy=instance_create_layer(0,0,"Instances", obj_enemy_soldier);
 		switch (move_type) {
 			
-			case (MOVE.RIVER):
-			enemy.x-=(100*i);
-			//enemy.red=i%2==0;
-			enemy.path = [[500, 270], [1200,270], [1200, 470], [720,470], [720, 670], [2000, 670]];
-			break;
-			
 			case (MOVE.DICE):
 			enemy.direction=270;	
 			enemy.formation_index=i;
@@ -23,18 +17,6 @@ function scr_create_enemy_soldier(amount, move_type, attack_type=noone, red=noon
 			enemy.image_angle=270;
 			break;
 			
-			case (MOVE.CORNER):
-			enemy.x=room_width/2;
-			enemy.y=-50;
-			enemy.formation_index=i;
-			enemy.red=true;
-			enemy.speed=10;
-			enemy.path= [[660, 340], [1260, 340]];
-			enemy.image_angle=270;
-			enemy.attack_type=attack_type;
-			enemy.move_type=move_type;
-			break;
-			
 			case (MOVE.SWOOP_RIGHT):
 			enemy.y=-50;
 			enemy.x=(room_width/2);
@@ -42,6 +24,7 @@ function scr_create_enemy_soldier(amount, move_type, attack_type=noone, red=noon
 			enemy.image_angle=enemy.direction;
 			enemy.move_type=move_type;
 			enemy.enemy_health=10;
+			enemy.enemy_health = 10;
 			break;
 			
 			case (MOVE.SWOOP_LEFT):
@@ -50,14 +33,7 @@ function scr_create_enemy_soldier(amount, move_type, attack_type=noone, red=noon
 			enemy.direction=270;
 			enemy.image_angle=enemy.direction;
 			enemy.move_type=move_type;
-			break;
-			
-			case (MOVE.TEST):
-			enemy.image_angle=270;
-			enemy.direction=270;
-			enemy.attack_type=attack_type
-			enemy.formation_index=i;
-			enemy.path = [[room_width/2, room_height/2]];
+			enemy.enemy_health = 10;
 			break;
 			
 			case (MOVE.HELIX_LEFT):
@@ -68,6 +44,7 @@ function scr_create_enemy_soldier(amount, move_type, attack_type=noone, red=noon
 			enemy.move_type=move_type;
 			enemy.red=true;
 			enemy.speed=15;
+			enemy.enemy_health = 10;
 			break;
 			
 			case (MOVE.HELIX_RIGHT):
@@ -77,6 +54,7 @@ function scr_create_enemy_soldier(amount, move_type, attack_type=noone, red=noon
 			enemy.direction=270;
 			enemy.move_type=move_type;
 			enemy.speed=15;
+			enemy.enemy_health = 10;
 			break;
 			
 			case (MOVE.CROSS_LEFT):

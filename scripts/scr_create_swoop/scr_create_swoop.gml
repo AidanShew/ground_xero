@@ -26,5 +26,4 @@ function create_swoop(){
 		}
 	}
 	swoop_spawn_timer--;
-	show_debug_message("Timer: "+string(timer));
 }
