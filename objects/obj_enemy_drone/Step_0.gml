@@ -21,6 +21,8 @@ switch (move_type) {
 
 switch (attack_type) {
 	case (ATTACK.AIMED):
-	scr_attack_aimed();
+	if (move_type == MOVE.SINGLE_SPIRAL && fire) {
+		scr_attack_aimed_drone();
+	}
 	break;
 }

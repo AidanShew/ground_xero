@@ -20,6 +20,10 @@ trio_spawned = false //Indicates that trio has started once.
 
 helix_spawn_timer = 90; //Required For create_helix()
 
+// Required for scr_create_single_spiral();
+spiral_spawn_timer = 30;
+arrived_spiral_drones = [];
+
 //Required for create_cross()
 cross_spawn_timer = 120;
 cross_polarity_timer = 30;

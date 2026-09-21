@@ -234,6 +234,7 @@
     {"id":{"name":"move_river","path":"scripts/move_river/move_river.yy",},},
     {"id":{"name":"move_target","path":"scripts/move_target/move_target.yy",},},
     {"id":{"name":"move_test","path":"scripts/move_test/move_test.yy",},},
+    {"id":{"name":"scr_attack_aimed_drone","path":"scripts/scr_attack_aimed_drone/scr_attack_aimed_drone.yy",},},
     {"id":{"name":"scr_attack_aimed","path":"scripts/scr_attack_aimed/scr_attack_aimed.yy",},},
     {"id":{"name":"scr_attack_cake","path":"scripts/scr_attack_cake/scr_attack_cake.yy",},},
     {"id":{"name":"scr_attack_spread","path":"scripts/scr_attack_spread/scr_attack_spread.yy",},},

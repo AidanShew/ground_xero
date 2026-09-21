@@ -1,6 +1,5 @@
 if (!spawned) {
 	//treclops_create();
-	//create_double_spiral();
 	//create_cross();
 	//create_single_spiral();
 	//create_revolver();

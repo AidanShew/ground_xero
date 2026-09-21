@@ -81,6 +81,7 @@
     {"name":"move_orbit","order":5,"path":"scripts/move_orbit/move_orbit.yy",},
     {"name":"move_river","order":6,"path":"scripts/move_river/move_river.yy",},
     {"name":"move_target","order":22,"path":"scripts/move_target/move_target.yy",},
+    {"name":"scr_attack_aimed_drone","order":4,"path":"scripts/scr_attack_aimed_drone/scr_attack_aimed_drone.yy",},
     {"name":"scr_attack_aimed","order":3,"path":"scripts/scr_attack_aimed/scr_attack_aimed.yy",},
     {"name":"scr_create_enemy_kodiak","order":18,"path":"scripts/scr_create_enemy_kodiak/scr_create_enemy_kodiak.yy",},
     {"name":"scr_create_enemy_tracer","order":3,"path":"scripts/scr_create_enemy_tracer/scr_create_enemy_tracer.yy",},

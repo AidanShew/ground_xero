@@ -10,15 +10,32 @@ function scr_create_enemy_drone(amount, move_type) {
 			break;
 			
 			case (MOVE.SINGLE_SPIRAL):
-			enemy.center_x=room_width/2;
-			enemy.center_y=(room_height/2)-200;
-			enemy.x=enemy.center_x;
-			enemy.y=enemy.center_y;
-			enemy.angle=0;
-			enemy.orbit_radius=250;
-			enemy.orbit_angle=enemy.angle+(360/amount)*i;
-			enemy.red=(i>=amount/2);
-			enemy.attack_type=ATTACK.AIMED;
+			enemy.fire = false;
+			enemy.controller = self;
+			while (spiral_spawn_timer > 0) {
+				enemy.center_x=room_width/2;
+				enemy.center_y=((room_height/2)-200);
+				spiral_spawn_timer--;
+			}
+			spiral_spawn_timer = 60;
+			
+			enemy.x = 1742;
+			enemy.y = -100;
+			enemy.angle = 0;
+			enemy.orbit_radius = 250;
+			enemy.orbit_angle = (360/amount)*i;
+			enemy.red = (i>=amount/2);
+			enemy.attack_type = ATTACK.AIMED;
+			
+			enemy.arrival = false;
+			with (enemy) {
+				path =
+				[center_x+lengthdir_x(orbit_radius, orbit_angle+angle),
+				center_y+lengthdir_y(orbit_radius, orbit_angle)+angle];
+				
+				speed = 20;
+				direction = point_direction(x,y, path[0], path[1]);
+			}
 			break;
 			
 			case (MOVE.DICE):

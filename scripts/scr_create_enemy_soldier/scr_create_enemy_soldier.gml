@@ -25,6 +25,7 @@ function scr_create_enemy_soldier(amount, move_type, attack_type=noone, red=noon
 			enemy.move_type=move_type;
 			enemy.enemy_health=10;
 			enemy.enemy_health = 10;
+			enemy.red = true;
 			break;
 			
 			case (MOVE.SWOOP_LEFT):
@@ -34,6 +35,7 @@ function scr_create_enemy_soldier(amount, move_type, attack_type=noone, red=noon
 			enemy.image_angle=enemy.direction;
 			enemy.move_type=move_type;
 			enemy.enemy_health = 10;
+			enemy.red = false;
 			break;
 			
 			case (MOVE.HELIX_LEFT):
