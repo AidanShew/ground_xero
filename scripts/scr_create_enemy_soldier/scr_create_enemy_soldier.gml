@@ -4,75 +4,94 @@ function scr_create_enemy_soldier(amount, move_type, attack_type=noone, red=noon
 		switch (move_type) {
 			
 			case (MOVE.DICE):
-			enemy.direction=270;	
-			enemy.formation_index=i;
 			
-			if (enemy.formation_index==0||enemy.formation_index==2||enemy.formation_index==5||enemy.formation_index==7) enemy.red=true;
+				enemy.direction=270;	
+				enemy.formation_index=i;
 			
-			enemy.path = [
-			[760, 240], [960, 240], [1160, 240], 
-				[860, 340], [1060, 340], 
-			[760, 440], [960, 440], [1160, 440]
-			];
-			enemy.image_angle=270;
+				if (enemy.formation_index==0||enemy.formation_index==2||enemy.formation_index==5||enemy.formation_index==7) enemy.red=true;
+			
+				enemy.path = [
+				[760, 240], [960, 240], [1160, 240], 
+					[860, 340], [1060, 340], 
+				[760, 440], [960, 440], [1160, 440]
+				];
+				enemy.image_angle=270;
+				
 			break;
 			
 			case (MOVE.SWOOP_RIGHT):
-			enemy.y=-50;
-			enemy.x=(room_width/2);
-			enemy.direction=270;
-			enemy.image_angle=enemy.direction;
-			enemy.move_type=move_type;
-			enemy.enemy_health=10;
-			enemy.enemy_health = 10;
-			enemy.red = true;
+				with (enemy) {
+					
+					y=-50;
+					x=(room_width/2);
+					direction=270;
+					image_angle=enemy.direction;
+					self.move_type=move_type;
+					enemy_health = 10;
+					self.red = true;
+					
+				}
 			break;
 			
-			case (MOVE.SWOOP_LEFT):
-			enemy.y=-50;
-			enemy.x=(room_width/2);
-			enemy.direction=270;
-			enemy.image_angle=enemy.direction;
-			enemy.move_type=move_type;
-			enemy.enemy_health = 10;
-			enemy.red = false;
+			case (MOVE.SWOOP_LEFT): with (enemy) {
+					
+					y=-50;
+					x=(room_width/2);
+					direction=270;
+					image_angle=enemy.direction;
+					self.move_type=move_type;
+					enemy_health = 10;
+					self.red = false;
+					
+				}
 			break;
 			
-			case (MOVE.HELIX_LEFT):
-			enemy.y=-50;
-			enemy.image_angle=270;
-			enemy.x=(room_width/2);
-			enemy.direction=270;
-			enemy.move_type=move_type;
-			enemy.red=true;
-			enemy.speed=15;
-			enemy.enemy_health = 10;
+			case (MOVE.HELIX_LEFT): with (enemy) {
+					
+					y=-50;
+					image_angle=270;
+					x=(room_width/2);
+					direction=270;
+					self.move_type=move_type;
+					self.red=true;
+					speed=15;
+					enemy_health = 10;
+					
+				}
 			break;
 			
-			case (MOVE.HELIX_RIGHT):
-			enemy.y=-50;
-			enemy.image_angle=270;
-			enemy.x=(room_width/2);
-			enemy.direction=270;
-			enemy.move_type=move_type;
-			enemy.speed=15;
-			enemy.enemy_health = 10;
+			case (MOVE.HELIX_RIGHT): with (enemy) {
+					
+					y=-50;
+					image_angle=270;
+					x=(room_width/2);
+					direction=270;
+					self.move_type=move_type;
+					speed=15;
+					enemy_health = 10;
+					
+				}
 			break;
 			
 			case (MOVE.CROSS_LEFT):
-			case (MOVE.CROSS_RIGHT):
-			enemy.controller=self;
-			enemy.y=move_type==MOVE.CROSS_LEFT ? -50 : -100;
-			enemy.x=(room_width/2);
-			enemy.red=red;
-			enemy.direction=270;
-			enemy.speed=15;
-			enemy.move_type=move_type;
+			case (MOVE.CROSS_RIGHT): with (enemy) {
+					
+					y=move_type==MOVE.CROSS_LEFT ? -50 : -100;
+					x=(room_width/2);
+					self.red=red;
+					direction=270;
+					speed=15;
+					self.move_type=move_type;
+					enemy_health = 10;
+					
+				}
+				
+				enemy.controller=self;
 			break;
 			
 			case (MOVE.CIRCUIT_RIGHT):
 			case (MOVE.CIRCUIT_LEFT):
-			enemy.enemy_health = 10;
+			enemy.enemy_health = 12;
 			
 			enemy.y=100;
 			var path_x1;
