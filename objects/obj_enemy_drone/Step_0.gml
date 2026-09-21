@@ -1,4 +1,5 @@
 event_inherited();
+
 switch (move_type) {
 	case (MOVE.ORBIT):
 	move_orbit();

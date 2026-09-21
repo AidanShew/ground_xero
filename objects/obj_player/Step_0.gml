@@ -34,12 +34,12 @@ obj_player.y = clamp(y, 30, room_height-25);
 
 // +--------------SPRITE--------------+
 
-if ((sprite_index == spr_to_blue) && (image_index >= image_number - 1)) {
+if ((sprite_index == spr_to_blue_big) && (image_index >= image_number - 1)) {
     sprite_index = spr_player_big;
     image_speed	= 0;
 }
-else if ((sprite_index == spr_to_red) && (image_index >= image_number - 1)) {
-    sprite_index = spr_player_red;
+else if ((sprite_index == spr_to_red_big) && (image_index >= image_number - 1)) {
+    sprite_index = spr_player_red_big;
     image_speed = 0;
 }
 
