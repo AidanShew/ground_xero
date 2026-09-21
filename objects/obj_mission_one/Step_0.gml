@@ -14,9 +14,9 @@ switch (section) {
 			create_trio();
 			trio_spawned=true;
 		}
-		else if (trio_spawned&&!instance_exists(obj_controller_trio)) {
-			section++;
-		}
+		else if (!instance_exists(obj_controller_trio)) section++;
+		
+		show_debug_message("Trio Controller?: "+string(instance_exists(obj_controller_trio)));
 	break;
 	
 	case (4):
@@ -31,13 +31,11 @@ switch (section) {
 	
 	case (6):
 		if (!single_spiral_spawned) {
-			scr_create_single_spiral(); //Needs exit
+			scr_create_single_spiral();
 			single_spiral_spawned = true;
 		}
-		else if (--single_spiral_timer<=0) {
-			if (instance_exists(obj_enemy_drone)) instance_destroy(obj_enemy_drone);
-			section++;
-		}
+		else if (!instance_exists(obj_enemy_drone)) section++;
+		single_spiral_timer--;
 	break;
 	
 	case (7):

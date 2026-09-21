@@ -6,7 +6,7 @@
   "name":"tre_hand_calibrate",
   "parent":{
     "name":"Treclops",
-    "path":"folders/Scripts/Campaign/Campaign Movement/Treclops.yy",
+    "path":"folders/Scripts/Enemy Movement/Treclops.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

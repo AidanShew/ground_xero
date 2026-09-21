@@ -3,6 +3,8 @@ var target_y=350;
 var orbit_speed= 10;
 move_timer--;
 
+if (!instance_exists(obj_enemy_soldier) && !instance_exists(obj_enemy_drone)) instance_destroy(self);
+
 //Enemy Soldier
 if (instance_exists(obj_enemy_soldier)) {
 	if (obj_enemy_soldier.arrival&&move_timer>0) {

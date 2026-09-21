@@ -6,7 +6,7 @@
   "name":"scr_create_revolver",
   "parent":{
     "name":"Revolver",
-    "path":"folders/Scripts/Campaign/Campaign Movement/Revolver.yy",
+    "path":"folders/Scripts/Enemy Movement/Revolver.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

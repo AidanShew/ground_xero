@@ -6,7 +6,7 @@
   "name":"scr_move_cross",
   "parent":{
     "name":"Cross",
-    "path":"folders/Scripts/Campaign/Campaign Movement/Cross.yy",
+    "path":"folders/Scripts/Enemy Movement/Cross.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

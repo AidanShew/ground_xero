@@ -6,7 +6,7 @@
   "name":"attack_desperation2",
   "parent":{
     "name":"Attack",
-    "path":"folders/Scripts/Campaign/Campaign Movement/Treclops/Attack.yy",
+    "path":"folders/Scripts/Enemy Movement/Treclops/Attack.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

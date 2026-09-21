@@ -6,7 +6,7 @@
   "name":"scr_move_single_spiral",
   "parent":{
     "name":"Single Spiral",
-    "path":"folders/Scripts/Campaign/Campaign Movement/Single Spiral.yy",
+    "path":"folders/Scripts/Enemy Movement/Single Spiral.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"scr_move_circuit",
   "parent":{
     "name":"Circuit",
-    "path":"folders/Scripts/Campaign/Campaign Movement/Circuit.yy",
+    "path":"folders/Scripts/Enemy Movement/Circuit.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

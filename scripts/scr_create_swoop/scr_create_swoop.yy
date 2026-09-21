@@ -6,7 +6,7 @@
   "name":"scr_create_swoop",
   "parent":{
     "name":"Swoop",
-    "path":"folders/Scripts/Campaign/Campaign Movement/Swoop.yy",
+    "path":"folders/Scripts/Enemy Movement/Swoop.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
