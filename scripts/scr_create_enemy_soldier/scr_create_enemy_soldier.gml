@@ -22,6 +22,7 @@ function scr_create_enemy_soldier(amount, move_type, attack_type=noone, red=noon
 			case (MOVE.SWOOP_RIGHT):
 				with (enemy) {
 					
+					speed = 25
 					y=-50;
 					x=(room_width/2);
 					direction=270;
@@ -35,6 +36,7 @@ function scr_create_enemy_soldier(amount, move_type, attack_type=noone, red=noon
 			
 			case (MOVE.SWOOP_LEFT): with (enemy) {
 					
+					speed = 25;
 					y=-50;
 					x=(room_width/2);
 					direction=270;
@@ -48,6 +50,7 @@ function scr_create_enemy_soldier(amount, move_type, attack_type=noone, red=noon
 			
 			case (MOVE.HELIX_LEFT): with (enemy) {
 					
+					speed = 25;
 					y=-50;
 					image_angle=270;
 					x=(room_width/2);
@@ -62,6 +65,7 @@ function scr_create_enemy_soldier(amount, move_type, attack_type=noone, red=noon
 			
 			case (MOVE.HELIX_RIGHT): with (enemy) {
 					
+					speed = 25;
 					y=-50;
 					image_angle=270;
 					x=(room_width/2);
@@ -91,7 +95,7 @@ function scr_create_enemy_soldier(amount, move_type, attack_type=noone, red=noon
 			
 			case (MOVE.CIRCUIT_RIGHT):
 			case (MOVE.CIRCUIT_LEFT):
-			enemy.enemy_health = 12;
+			enemy.enemy_health = 11;
 			
 			enemy.y=100;
 			var path_x1;

@@ -39,11 +39,16 @@ switch (section) {
 	break;
 	
 	case (7):
+	
 		if (!revolver_spawned) {
 			scr_create_revolver();
 			revolver_spawned=true;
 		}
-		else if (--retreat_timer <= -180) section++;
+		// Section will progress if retreat_timer is less than -180 or both controllers are destroyed
+		else if (--retreat_timer <= -180 || 
+		(revolver_spawned && !instance_exists(obj_controller_revolver_left) && 
+		!instance_exists(obj_controller_revolver_right))) section++;
+		
 	break;
 	
 	case (8):

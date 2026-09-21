@@ -1,4 +1,4 @@
-function tracer_create(move_type, amount=2, red=noone){	
+function tracer_create(move_type, amount=2, speed = 15){	
 	for (var i=0; i<amount; i++) {		
 		//Enemy creation
 		var enemy=instance_create_layer(0, 0, "Instances", obj_enemy_tracer);

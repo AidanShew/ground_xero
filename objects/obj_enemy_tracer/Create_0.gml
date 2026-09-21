@@ -7,6 +7,8 @@ move_speed = 10;
 
 fire_counter=0;
 
+red = noone;
+
 t = 0;
 
 default_tracer_hp=5;

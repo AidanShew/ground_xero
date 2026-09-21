@@ -1,6 +1,7 @@
 var orbit_speed= 5;
 
-if (obj_enemy_soldier.arrival) {
+if (!instance_exists(obj_enemy_soldier)) instance_destroy(self);
+else if (obj_enemy_soldier.arrival) {
 	if (controller.retreat_timer<=0) {
 		with (obj_enemy_soldier) {
 			if (move_type==MOVE.REVOLVER_RIGHT) {
