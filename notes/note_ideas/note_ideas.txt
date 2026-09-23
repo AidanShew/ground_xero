@@ -1,0 +1,25 @@
+	
+	+------------+
+	|	IDEARS	 |
+	+------------+
+
+CAREER EVOLVED
+* Counts how many times you beat the campaign
+	* Achievement Idea for Steam?
+* Counts how fast you beat the campaign each run
+	* Compares each entry and points out the fastest run time.
+* Counts how many bullets you fired? - Kinda cool to know
+* Counts how many times you switched polarity?
+* Counts how many enemies you killed
+* Counts how many times you died
+* Counts how many times you rage quit (Exit the program while having started a new run but never finishing it)
+* God Mode: Unable to die from anything
+	* Nothing that player does in this mode will count for career (Will get a disclaimer pop-up about that)
+
+FUTURE IDEAS
+* Cosmetics
+	* Oxygen Ship, Legacy Ship, a few color variations
+	* Get new variants from completing the campaign
+* Custom power up creator (Mix and match different attributes from power ups)
+* Option to remove power ups (Kind of like a hard mode)
+* Achievements - Either built in or on steam?

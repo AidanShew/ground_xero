@@ -1,0 +1,1 @@
+if (room == rm_menu) room = rm_playground;

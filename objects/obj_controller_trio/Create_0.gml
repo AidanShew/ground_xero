@@ -1,6 +1,6 @@
 revolver_timer=0;
 move_timer=120;
-star_timer=20;
+star_timer=120;
 
 revolver_soldiers=[];
 star_drones_left=[];

@@ -1,0 +1,52 @@
+PROJECT OVERVIEW
+Far From Eden is a 2D, vertically scrolling bullet hell.
+This personal project lets me gain hands-on experience with object-oriented programming while in school.
+
+PROJECT SUMMARY
+Engine:				GameMaker Studio
+Language:			GML
+Version Control:	Git/GitHub
+Architecture:		Object-Based, modular functions "Scripts"
+Data Structures:	Arrays, enums, structs, functions
+Gameplay:			State-based enemy behavior, timers, pre-set movement 
+Project Scope:		Far From Eden - Mission One
+
+PROJECT ASSET DIRECTORY
+OBJECTS
+|-Background Processes
+|-Bullets
+|-Enemies
+|-Game Controllers
+|-Menu Buttons
+|-Other Objects
+|-Power Ups
+|-Spawners
+
+ROOMS
+|-Campaign
+
+SCRIPTS
+|-Enemy Attack
+|-Enemy Create
+|-Enemy Movement
+|-Misc.
+|-Player Puppet
+|-User Interface
+
+SOUNDS
+|-Announcer
+|-Explosions
+|-Fire
+|-Menu
+
+SPRITES
+|-Bullets
+|-Enemies
+|-Legacy
+|-Player
+|-Set Pieces
+|-UI
+
+UNUSED ASSETS: This folder contains all assets (objects, scripts, etc) that aren't being used.
+These assets will be deleted in the final release.
+

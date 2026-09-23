@@ -24,7 +24,7 @@ if (instance_exists(obj_enemy_soldier)) {
 					fire=false;
 					orbit_offset+=min(orbit_speed, 90 - orbit_offset);
 					if (orbit_offset>=90) {
-						other.revolver_timer=20;
+						other.revolver_timer=60;
 						orbit_offset=0;
 						rotation_order=(rotation_order+1) mod 4;
 					}
@@ -90,7 +90,7 @@ if (instance_exists(obj_enemy_drone)) {
 			
 			show_debug_message("Right: "+string(array_length(star_drones_right)));
 		}
-		star_timer = 30;
+		star_timer = 120;
 	}
 	else if (obj_enemy_drone.arrived) star_timer--;
 }

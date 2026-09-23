@@ -52,7 +52,7 @@ default_pup_time=300
 pup_timer=default_pup_time;
 
 //Immunity
-immunity=true;
+immunity=false;
 //immunity=obj_game.player_lives!=obj_game.default_player_lives;
 default_immunity_timer=120;
 immunity_timer=default_immunity_timer;
