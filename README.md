@@ -39,7 +39,7 @@ Firefight was previously available however it has been hidden from the main menu
 
 #### Main Menu
 - ***Campaign*** is the main mode of the game.
-- ***Playground*** is the debugging room where new mechanics are tested and designed. This will not be featured in the final release.
+- ***Playground*** is the debugging room where new mechanics are tested and designed. This will not be featured in the final release. To access Playground, press F1 on the main menu.
 
 #### Exiting the Game
 "Exit to Desktop" button will close the game and return to GameMaker.
