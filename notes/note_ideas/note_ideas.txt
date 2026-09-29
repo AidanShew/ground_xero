@@ -3,6 +3,11 @@
 	|	IDEARS	 |
 	+------------+
 
+GENERAL IDEAS
+* Side bar includes stress levels of organs during gameplay.
+	* Will increase to a higher stress state during intense gameplay.
+	* Won't affect gameplay as it would be interesting to have a stress mechanic but will be yet another thing I have to balance with limited time.
+
 CAREER EVOLVED
 * Counts how many times you beat the campaign
 	* Achievement Idea for Steam?

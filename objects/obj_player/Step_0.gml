@@ -90,7 +90,6 @@ else if ((sprite_index == spr_to_red_big) && (image_index >= image_number - 1)) 
 // +--------------SHOOTING--------------+
 
 if (keyboard_check(vk_up) && fire_counter++ >= 2 && !megadrive) {
-	obj_player_blue_gun.sprite_index = spr_player_guns_blue_firing;
 	for (var i=0; i<2; i++) {
 		var bullet = instance_create_layer(i==0 ? x-20 : x+20, y-30, "Instances",obj_bullet_player);
 		bullet.damage = damage;
@@ -102,6 +101,8 @@ if (keyboard_check(vk_up) && fire_counter++ >= 2 && !megadrive) {
 	
 	fire_counter=0;
 }
+
+if (keyboard_check(vk_up)) obj_player_blue_gun.sprite_index = spr_player_guns_blue_firing;
 else obj_player_blue_gun.sprite_index = spr_player_guns_blue_neutral;
 
 

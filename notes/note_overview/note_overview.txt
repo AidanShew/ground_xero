@@ -48,5 +48,4 @@ SPRITES
 |-UI
 
 UNUSED ASSETS: This folder contains all assets (objects, scripts, etc) that aren't being used.
-These assets will be deleted in the final release.
-
+These assets will be deleted in the final release but are kept for now.
