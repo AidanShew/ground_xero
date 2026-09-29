@@ -21,8 +21,50 @@ move_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 //If negative, player is moving up
 move_y = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
+if (move_x < 0) {
+	obj_player_thruster_left.thruster_state = THRUSTER.LEFT;
+	obj_player_thruster_right.thruster_state = THRUSTER.LEFT;
+}
+else if (move_x > 0) {
+	obj_player_thruster_left.thruster_state = THRUSTER.RIGHT;
+	obj_player_thruster_right.thruster_state = THRUSTER.RIGHT;
+}
+else if (move_y < 0) {
+	obj_player_thruster_left.thruster_state = THRUSTER.UP;
+	obj_player_thruster_right.thruster_state = THRUSTER.UP;
+}
+else if (move_y > 0) {
+	obj_player_thruster_left.thruster_state = THRUSTER.DOWN;
+	obj_player_thruster_right.thruster_state = THRUSTER.DOWN;
+}
+else {
+	obj_player_thruster_left.thruster_state = THRUSTER.NEUTRAL;
+	obj_player_thruster_right.thruster_state = THRUSTER.NEUTRAL;
+}
+
 x += move_x * player_speed;
 y += move_y * player_speed;
+
+with (obj_player_thruster_left) {
+	x += other.move_x * other.player_speed;
+	y += other.move_y * other.player_speed;
+	x = clamp(x, 545, room_width-545);
+	y = clamp(y, 30, room_height-25);
+}
+
+with (obj_player_thruster_right) {
+	x += other.move_x * other.player_speed;
+	y += other.move_y * other.player_speed;
+	x = clamp(x, 545, room_width-545);
+	y = clamp(y, 30, room_height-25);
+}
+
+with (obj_player_blue_gun) {
+	x += other.move_x * other.player_speed;
+	y += other.move_y * other.player_speed;
+	x = clamp(x, 545, room_width-545);
+	y = clamp(y, 30, room_height-25);
+}
 
 hsp = move_x * player_speed;
 vsp = move_y * player_speed;
@@ -33,7 +75,7 @@ obj_player.y = clamp(y, 30, room_height-25);
 
 
 // +--------------SPRITE--------------+
-
+/*
 if ((sprite_index == spr_to_blue_big) && (image_index >= image_number - 1)) {
     sprite_index = spr_player_big;
 	image_index = 0;
@@ -43,7 +85,7 @@ else if ((sprite_index == spr_to_red_big) && (image_index >= image_number - 1)) 
     sprite_index = spr_player_red_big;
     image_speed = 0;
 }
-
+*/
 
 // +--------------SHOOTING--------------+
 
@@ -60,7 +102,7 @@ if (keyboard_check(vk_up) && fire_counter++ >= 2 && !megadrive) {
 	fire_counter=0;
 }
 
-image_speed = keyboard_check(vk_up) ? 1 : 0;
+
 
 
 // +--------------COMBOS--------------+

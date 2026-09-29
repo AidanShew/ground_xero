@@ -1,4 +1,10 @@
 function scr_global_enums(){
+	
+	enum POLARITY {
+		BLUE,
+		RED
+	}
+
 	enum MOVE {
 		RIVER,
 		DICE,

@@ -1,3 +1,4 @@
+/*
 show_debug_message("Red Status: "+string(red));
 if (red) {
 	red=false;

@@ -1,0 +1,1 @@
+if (instance_exists(obj_player_thruster_left)) instance_destroy(obj_player_thruster_left);
