@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_player_blue_gun",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_player_blue_gun",
   "overriddenProperties":[],
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_guns_blue",
-    "path":"sprites/spr_player_guns_blue/spr_player_guns_blue.yy",
+    "name":"spr_player_guns_blue_firing",
+    "path":"sprites/spr_player_guns_blue_firing/spr_player_guns_blue_firing.yy",
   },
   "spriteMaskId":null,
   "visible":true,
