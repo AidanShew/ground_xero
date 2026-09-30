@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player_blue_gun",
+  "%Name":"obj_player_guns",
   "eventList":[],
   "managed":true,
-  "name":"obj_player_blue_gun",
+  "name":"obj_player_guns",
   "overriddenProperties":[],
   "parent":{
     "name":"Player",

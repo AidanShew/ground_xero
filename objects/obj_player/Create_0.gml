@@ -17,7 +17,7 @@ if ( !instance_exists(obj_battle_feed) ) instance_create_layer(x,y,"Instances", 
 if ( !instance_exists(obj_game) ) instance_create_layer(x,y, "Instances", obj_game);
 if ( !instance_exists(obj_player_thruster_left) ) instance_create_layer(x,y, "Instances", obj_player_thruster_left);
 if ( !instance_exists(obj_player_thruster_right) ) instance_create_layer(x,y, "Instances", obj_player_thruster_right);
-if ( !instance_exists(obj_player_blue_gun) ) instance_create_layer(x,y, "Instances", obj_player_blue_gun);
+if ( !instance_exists(obj_player_guns) ) instance_create_layer(x,y, "Instances", obj_player_guns);
 
 instance_create_layer(x, y, "Instances", obj_multiplier);
 

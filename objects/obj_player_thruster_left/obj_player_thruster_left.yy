@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_thruster",
-    "path":"sprites/spr_player_thruster/spr_player_thruster.yy",
+    "name":"spr_player_blue_thruster_left",
+    "path":"sprites/spr_player_blue_thruster_left/spr_player_blue_thruster_left.yy",
   },
   "spriteMaskId":null,
   "visible":true,

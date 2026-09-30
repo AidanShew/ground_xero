@@ -59,7 +59,7 @@ with (obj_player_thruster_right) {
 	y = clamp(y, 30, room_height-25);
 }
 
-with (obj_player_blue_gun) {
+with (obj_player_guns) {
 	x += other.move_x * other.player_speed;
 	y += other.move_y * other.player_speed;
 	x = clamp(x, 545, room_width-545);
@@ -102,8 +102,8 @@ if (keyboard_check(vk_up) && fire_counter++ >= 2 && !megadrive) {
 	fire_counter=0;
 }
 
-if (keyboard_check(vk_up)) obj_player_blue_gun.sprite_index = spr_player_guns_blue_firing;
-else obj_player_blue_gun.sprite_index = spr_player_guns_blue_neutral;
+if (keyboard_check(vk_up)) obj_player_guns.sprite_index = red ? spr_player_guns_red_firing : spr_player_guns_blue_firing;
+else obj_player_guns.sprite_index = red ? spr_player_red_guns_neutral : spr_player_blue_guns_neutral;
 
 
 

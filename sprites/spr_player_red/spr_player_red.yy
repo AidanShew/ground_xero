@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Player Red",
-    "path":"folders/Sprites/Player/Player Red.yy",
+    "name":"Player Red Original",
+    "path":"folders/Sprites/Player/Player Red/Player Red Original.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
