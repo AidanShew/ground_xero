@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_bullet_big",
-    "path":"sprites/spr_bullet_big/spr_bullet_big.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

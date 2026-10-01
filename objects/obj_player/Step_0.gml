@@ -89,9 +89,18 @@ else if ((sprite_index == spr_to_red_big) && (image_index >= image_number - 1)) 
 
 // +--------------SHOOTING--------------+
 
-if (keyboard_check(vk_up) && fire_counter++ >= 2 && !megadrive) {
+if (keyboard_check(vk_up) && fire_counter++ >= 5 && !megadrive) {
+	// Blue sprite is defined before for-loop so both bullets have same sprite.
+	// Bullet sprites are randomly assigned.
+	var blue_sprite = choose(spr_blue_bullet_thick, spr_blue_bullet_thin);
+	
+	// For loop runs twice, results in two bullets at once, one for each side of the ship.
 	for (var i=0; i<2; i++) {
-		var bullet = instance_create_layer(i==0 ? x-20 : x+20, y-30, "Instances",obj_bullet_player);
+		var bullet = instance_create_layer(i==0 ? x-20 : x+20, y-100, "Instances",obj_bullet_player);
+		
+		// bullet sprite is set to either red or blue selection.
+		bullet.sprite_index=red ? spr_red_bullet : blue_sprite;
+		
 		bullet.damage = damage;
 	}
 		
