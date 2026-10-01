@@ -366,6 +366,7 @@
     {"id":{"name":"round_24","path":"sprites/round_24/round_24.yy",},},
     {"id":{"name":"round_25","path":"sprites/round_25/round_25.yy",},},
     {"id":{"name":"Runway","path":"sprites/Runway/Runway.yy",},},
+    {"id":{"name":"spr_blue_bullet_med","path":"sprites/spr_blue_bullet_med/spr_blue_bullet_med.yy",},},
     {"id":{"name":"spr_blue_bullet_thick","path":"sprites/spr_blue_bullet_thick/spr_blue_bullet_thick.yy",},},
     {"id":{"name":"spr_blue_bullet_thin","path":"sprites/spr_blue_bullet_thin/spr_blue_bullet_thin.yy",},},
     {"id":{"name":"spr_bullet_big_original","path":"sprites/spr_bullet_big_original/spr_bullet_big_original.yy",},},

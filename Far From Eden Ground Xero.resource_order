@@ -138,6 +138,7 @@
     {"name":"snd_menu_browse_old","order":3,"path":"sounds/snd_menu_browse_old/snd_menu_browse_old.yy",},
     {"name":"snd_menu_browse","order":2,"path":"sounds/snd_menu_browse/snd_menu_browse.yy",},
     {"name":"snd_menu_select_old","order":1,"path":"sounds/snd_menu_select_old/snd_menu_select_old.yy",},
+    {"name":"spr_blue_bullet_med","order":13,"path":"sprites/spr_blue_bullet_med/spr_blue_bullet_med.yy",},
     {"name":"spr_blue_bullet_thick","order":12,"path":"sprites/spr_blue_bullet_thick/spr_blue_bullet_thick.yy",},
     {"name":"spr_blue_bullet_thin","order":10,"path":"sprites/spr_blue_bullet_thin/spr_blue_bullet_thin.yy",},
     {"name":"spr_bullet_big_original","order":11,"path":"sprites/spr_bullet_big_original/spr_bullet_big_original.yy",},

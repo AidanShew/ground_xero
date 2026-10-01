@@ -92,7 +92,7 @@ else if ((sprite_index == spr_to_red_big) && (image_index >= image_number - 1)) 
 if (keyboard_check(vk_up) && fire_counter++ >= 5 && !megadrive) {
 	// Blue sprite is defined before for-loop so both bullets have same sprite.
 	// Bullet sprites are randomly assigned.
-	var blue_sprite = choose(spr_blue_bullet_thick, spr_blue_bullet_thin);
+	var blue_sprite = choose(spr_blue_bullet_thick, spr_blue_bullet_med, spr_blue_bullet_thin);
 	
 	// For loop runs twice, results in two bullets at once, one for each side of the ship.
 	for (var i=0; i<2; i++) {
