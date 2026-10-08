@@ -56,8 +56,8 @@ default_pup_time=300
 pup_timer=default_pup_time;
 
 //Immunity
-immunity=false;
-//immunity=obj_game.player_lives!=obj_game.default_player_lives;
+immunity=true;
+
 default_immunity_timer=120;
 immunity_timer=default_immunity_timer;
 immortal=(immunity || overshield);

@@ -14,4 +14,4 @@ wave_frequency = 0.3;  // speed of oscillation
 
 damage=1;
 
-sprite_index=red ? spr_red_bullet : spr_bullet;
+sprite_index=red ? spr_red_bullet_thin : spr_bullet;

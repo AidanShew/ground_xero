@@ -1,0 +1,13 @@
+I last added the new thruster sprite for red and blue.
+
+BUT when I switch polarities, it doesn't switch the sprite accordingly until move_x or move_y update.
+
+I need to find a way to keep the polarities synced across the main body and thrusters.
+
+
+TO DO:
+- I want to switch the red/blue polarity to a enum controlled state, that would be probably more efficient.
+- Implement sprite target system for thrusters to simplify their step functions.
+- Fix desyncing of polarity sprites.
+
+Also the sprite directory is a mess, it needs to be sorted through properly. GET TO WORK!!

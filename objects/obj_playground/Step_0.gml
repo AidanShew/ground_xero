@@ -2,7 +2,7 @@ if (!spawned) {
 	//treclops_create();
 	//create_cross();
 	//create_single_spiral();
-	//create_revolver();
+	
 	spawned=true;
 }
 //create_pack();

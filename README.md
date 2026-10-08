@@ -1,10 +1,35 @@
 # Far From Eden: Ground Xero
+**Project is still in development, some things may change later!**
+
+  <img src="./ffegx_sprites/ffegx_gifs/player_blue_ship_still.gif" alt="Player Blue Ship Still Animation" /> <img src="./ffegx_sprites/ffegx_gifs/player_blue_ship_firing.gif" alt="Player Blue Ship Firing Animation" />
+
+### Readme Directory
+* [Project Overview (Story/Features)](#description)
+* [Manual (Installation/Controls/Menu Guide)](#manual)
+
+
 ## Description
 #### About Far From Eden
 Far From Eden is a 2D, vertically scrolling bullet hell. This personal project lets me gain hands-on experience with object-oriented programming while in school.
 
 #### Campaign: Lockstep March Toward Damnation
 Ground Xero features only the first mission titled "Ground Xero". Fight in the final war of humankind and join the march toward damnation. Featuring multiple unique enemies with various attack types and movement patterns, and a relentless boss battle waiting at the end. Witness the great societal suicide.
+
+#### Player Ship Design
+<p align="center">
+  <img src="./ffegx_sprites/ffegx_gifs/player_blue_ship_still_big.gif" alt="Player Blue Ship Animation" />
+  <img src="./ffegx_sprites/ffegx_gifs/player_blue_ship_firing_big.gif" alt="Player Blue Ship Animation" />
+</p>
+
+* The player ship features **see-through metal alloy**.
+    * This material is vastly stronger than military-grade alloy of today.
+    * The transparency makes it easier for engineers to quickly assess mechanical or biological issues with the craft.
+* This craft features lab-grown biological organs that function to replace mechanical processes. 
+    * These organs are grown en mass in large Organ Farms, making it faster and more efficient to mass-produce during war-time. 
+    * The central 'brain' or *core*, outputs commands to other functions of the ship such as it's cannons, or multi-directional thrusters.
+        * The Core also acts as a 'heart', as it pumps energy fluid to each respective function during runtime.
+        * Notice the Core pumps harder when the player fires their cannons during gameplay.
+
 
 #### Playground: Debugging
 This is where all of the newest developments are being tested and developed. Enemies in Playground will change periodically as I am finalizing and testing different gameplay systems. This mode will not be featured in the final release.

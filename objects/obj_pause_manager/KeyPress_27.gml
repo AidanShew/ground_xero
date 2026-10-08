@@ -1,9 +1,10 @@
-if (room!=rm_menu) {
+if (room != rm_menu ) {
 	
 	if(!is_paused) {
 		var offset=0;
+		
 		for (var i=0; i < instance_count; i++) {
-			if (instance_find(all, i).sprite_index != -1) {
+			if ( instance_find(all, i).sprite_index != -1) {
 				all_objects[i - offset, 0] = instance_find(all, i).sprite_index;
 				all_objects[i - offset, 1] = instance_find(all, i).image_index;
 				all_objects[i - offset, 2] = instance_find(all, i).x;
@@ -20,19 +21,17 @@ if (room!=rm_menu) {
 		is_paused=true;
 		if(is_paused) {
 			instance_create_layer(352, 192, "Instances", obj_button_menu);
-			instance_create_layer(768,192, "Instances", obj_button_controls);
 			instance_create_layer(352, 960, "Instances", obj_button_quit);
 		}
 	}
 	else {
 		instance_activate_all();
 		is_paused=false;
+		
 		instance_destroy(obj_button_menu);
 		instance_destroy(obj_button_quit);
-		instance_destroy(obj_button_controls);
-		if (instance_exists(obj_controls)) {
-			instance_destroy(obj_controls);
-		}
+		
 		all_objects=[]; // Resets array, else all previous paused objects would be redrawn on different screen.
 	}
+	
 }

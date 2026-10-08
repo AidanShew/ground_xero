@@ -21,6 +21,9 @@ move_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 //If negative, player is moving up
 move_y = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 
+show_debug_message("Move X: "+string(move_x));
+show_debug_message("Move Y: "+string(move_y));
+
 if (move_x < 0) {
 	obj_player_thruster_left.thruster_state = THRUSTER.LEFT;
 	obj_player_thruster_right.thruster_state = THRUSTER.LEFT;
@@ -41,6 +44,7 @@ else {
 	obj_player_thruster_left.thruster_state = THRUSTER.NEUTRAL;
 	obj_player_thruster_right.thruster_state = THRUSTER.NEUTRAL;
 }
+
 
 x += move_x * player_speed;
 y += move_y * player_speed;
@@ -93,13 +97,14 @@ if (keyboard_check(vk_up) && fire_counter++ >= 5 && !megadrive) {
 	// Blue sprite is defined before for-loop so both bullets have same sprite.
 	// Bullet sprites are randomly assigned.
 	var blue_sprite = choose(spr_blue_bullet_thick, spr_blue_bullet_med, spr_blue_bullet_thin);
+	var red_sprite= choose(spr_red_bullet_thick, spr_red_bullet_med, spr_red_bullet_thin);
 	
 	// For loop runs twice, results in two bullets at once, one for each side of the ship.
 	for (var i=0; i<2; i++) {
 		var bullet = instance_create_layer(i==0 ? x-20 : x+20, y-100, "Instances",obj_bullet_player);
 		
 		// bullet sprite is set to either red or blue selection.
-		bullet.sprite_index=red ? spr_red_bullet : blue_sprite;
+		bullet.sprite_index=red ? red_sprite : blue_sprite;
 		
 		bullet.damage = damage;
 	}

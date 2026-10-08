@@ -30,6 +30,8 @@ spiral_spawn_timer = 30;
 arrived_spiral_drones = [];
 //scr_create_single_spiral();
 
+//scr_create_revolver();
+
 //create_trio();
 //create_trio_nd();
 //scr_create_tracer_section();
