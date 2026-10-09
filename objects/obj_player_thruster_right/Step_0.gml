@@ -10,6 +10,47 @@ var sprite_retracted =
 obj_player.red ? spr_player_red_thruster_right_retracted :
 spr_player_blue_thruster_right_retracted;
 
+
+if (sprite_index != sprite_range) sprite_index = sprite_range;
+
+switch(thruster_state) {
+	case THRUSTER.DOWN:
+	target_sprite = sprite_range;
+	target_index = 2;
+	break;
+	
+	case THRUSTER.UP:
+	target_sprite = sprite_range;
+	target_index = 9;
+	break;
+	
+	case THRUSTER.LEFT:
+	target_index = 1;
+	target_sprite = sprite_extended;
+	break;
+	
+	case THRUSTER.RIGHT:
+	target_index = image_number-2;
+	target_sprite = sprite_retracted;
+	break;
+	
+	case THRUSTER.NEUTRAL:
+	target_sprite = sprite_range;
+	target_index = 6;
+	break;
+}
+
+if (image_index != target_index) {
+	image_speed = image_index > target_index ? -1 : 1;
+}
+else {
+	if (sprite_index != target_sprite) sprite_index = target_sprite;
+	image_speed = 
+	target_sprite = sprite_range ? 0 : 1;
+}
+
+
+/*
 switch (thruster_state) {
 	case THRUSTER.LEFT:
 	// Frame Target: Last Frame
