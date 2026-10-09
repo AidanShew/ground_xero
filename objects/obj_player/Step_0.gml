@@ -111,7 +111,7 @@ if (keyboard_check(vk_up) && fire_counter++ >= 5 && !megadrive) {
 		
 	
 	//var sound = red ? choose(snd_explosion_normal, snd_explosion_low, snd_explosion_lower) : choose(snd_explosion_normal, snd_explosion_high);	
-	//audio_play_sound(sound, 1, 0);
+	audio_play_sound(snd_fire_new, 1, 0);
 	
 	fire_counter=0;
 }
