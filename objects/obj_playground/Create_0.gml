@@ -35,6 +35,6 @@ arrived_spiral_drones = [];
 //create_trio();
 //create_trio_nd();
 //scr_create_tracer_section();
-/*
+
 treclops_spawned=false;
-treclops_create();
+scr_create_enemy_treclops();

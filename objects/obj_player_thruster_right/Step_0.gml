@@ -44,9 +44,7 @@ if (image_index != target_index) {
 	image_speed = image_index > target_index ? -1 : 1;
 }
 else {
-	if (sprite_index != target_sprite) sprite_index = target_sprite;
-	image_speed = 
-	target_sprite = sprite_range ? 0 : 1;
+	image_speed = 0;
 }
 
 
