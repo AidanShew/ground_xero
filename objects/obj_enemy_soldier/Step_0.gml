@@ -1,6 +1,15 @@
 event_inherited();
 sprite_index=red ? spr_soldier_red : spr_soldier_blue;
 
+if (firing) {
+	firing_alpha --;
+	if (firing_alpha <= 0) {
+		firing = false;
+		firing_alpha = 15;
+	}
+}
+	
+
 switch (move_type) {
 	case MOVE.RIVER:
 	move_river();
@@ -72,10 +81,6 @@ if (fire) {
 	switch (attack_type) {
 		case ATTACK.SPIRAL:
 		if (x>528) attack_spiral();
-		break;
-	
-		case ATTACK.MINEFIELD:
-		if (x>=528)	attack_minefield(mine_alignment);
 		break;
 	
 		case ATTACK.SPREAD:

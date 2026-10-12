@@ -8,6 +8,7 @@ function scr_move_helix(){
 		else direction-=2;
 	}
 	if (y<room_height/2&&fire_counter>=12) {
+		firing = true;
 		var bullet=instance_create_layer(x, y, "Instances", obj_bullet_soldier);
 		bullet.direction=image_angle;
 		bullet.red=red;

@@ -41,7 +41,6 @@ combo=0;
 //Polarity
 red=false;
 
-
 // +--------------PLAYER SPEED--------------+
 
 player_speed=10;

@@ -2,6 +2,7 @@ function attack_spread(){
 	if (fire_counter>=5) {
 		
 		for (var i=0; i<6; i++) {
+			firing = true;
 			var bullet_right=instance_create_layer(x, y,"Instances", obj_bullet_soldier);
 			bullet_right.direction=image_angle+(i*10);
 			bullet_right.red=red;

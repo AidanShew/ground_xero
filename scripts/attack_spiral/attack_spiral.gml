@@ -6,6 +6,7 @@ function attack_spiral(){
 		var base_angle = bullet_angle;
 
 		for (var i = 0; i < density; i++) {
+			firing = true;
 		    var angle = base_angle + (360 / density) * i;
 
 		    var soldier_bullet = instance_create_layer(x, y, "Instances", obj_bullet_soldier);

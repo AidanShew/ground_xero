@@ -1,7 +1,10 @@
 event_inherited();
 move_speed=20;
 
-enemy_health=15;
+firing = false;
+firing_alpha = 15;
+
+enemy_health=3;
 
 fire=false;
 

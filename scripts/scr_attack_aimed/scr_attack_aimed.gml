@@ -1,5 +1,6 @@
 function scr_attack_aimed(){
 	if (fire_counter>=5) {
+		firing = true;
 		var bullet=instance_create_layer(x,y,"Instances", obj_bullet_soldier);
 		bullet.direction=image_angle;
 		bullet.red=red;
