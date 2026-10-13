@@ -95,7 +95,7 @@ function scr_create_enemy_soldier(amount, move_type, attack_type=noone, red=noon
 			
 			case (MOVE.CIRCUIT_RIGHT):
 			case (MOVE.CIRCUIT_LEFT):
-			enemy.enemy_health = 11;
+			enemy.enemy_health = 7;
 			
 			enemy.y=100;
 			var path_x1;

@@ -39,6 +39,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"ft_debug","order":1,"path":"fonts/ft_debug/ft_debug.yy",},
+    {"name":"note_fix_log","order":3,"path":"notes/note_fix_log/note_fix_log.yy",},
     {"name":"note_ideas","order":1,"path":"notes/note_ideas/note_ideas.yy",},
     {"name":"note_left_off","order":2,"path":"notes/note_left_off/note_left_off.yy",},
     {"name":"obj_bullet_player_helix","order":4,"path":"objects/obj_bullet_player_helix/obj_bullet_player_helix.yy",},

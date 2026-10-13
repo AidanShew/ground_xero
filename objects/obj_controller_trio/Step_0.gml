@@ -46,7 +46,10 @@ if (instance_exists(obj_enemy_soldier)) {
 	}
 }
 
-//Enemy Drones
+
+
+//	--- Enemy Drones ---
+
 if (instance_exists(obj_enemy_drone)) {
 	var left_index = array_length(star_drones_left) == 1 ? 0 : array_length(star_drones_left)-1;
 	var right_index = array_length(star_drones_right) == 1 ? 0 : array_length(star_drones_right)-1;
@@ -90,7 +93,7 @@ if (instance_exists(obj_enemy_drone)) {
 			
 			show_debug_message("Right: "+string(array_length(star_drones_right)));
 		}
-		star_timer = 120;
+		star_timer = 60;
 	}
 	else if (obj_enemy_drone.arrived) star_timer--;
 }

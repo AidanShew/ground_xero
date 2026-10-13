@@ -4,8 +4,7 @@
 	+---------------------+
 	
 	Note: Create Events occur once, upon initialization.
-	
-	Sections:
+
 
 */
 
