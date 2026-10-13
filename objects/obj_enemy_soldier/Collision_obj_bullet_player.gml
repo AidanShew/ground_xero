@@ -1,6 +1,6 @@
 instance_destroy(other);
 if (other.red == self.red) {
-	enemy_health = --;
+	enemy_health--;
 	var sound=choose(snd_explosion_normal, snd_explosion_high, snd_explosion_low, snd_explosion_lower);
 	audio_play_sound(sound, 1, false);
 }
