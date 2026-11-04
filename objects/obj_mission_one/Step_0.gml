@@ -1,7 +1,17 @@
 switch (section) {
 	case (1):
 		create_swoop();
-		if (swoop_spawn_timer<=-30) section++;
+		if (swoop_spawn_timer<=-30) {
+			if (obj_bg_water.state == WATER.FULL_SCREEN) {
+				obj_bg_skyline.state = CITY.TRANSITION;
+				obj_bg_water.state = WATER.TRANSITION;
+			}
+			
+			if (obj_bg_water.state == WATER.MOVE_DOWN && obj_bg_skyline.state == CITY.MOVE_DOWN)  {
+				instance_create_layer(x,y,"Instances", obj_bg_moon); // Create moon for background.
+				section++;
+			}
+		}
 	break;
 	
 	case (2):

@@ -1,5 +1,14 @@
 depth=1;
 
+//Create Background
+sprite_prefetch(spr_bg_water_trans);
+sprite_prefetch(spr_bg_skyline_trans);
+
+instance_create_layer(x,y,"Instances", obj_bg_water); // Create water for background.
+instance_create_layer(x,y,"Instances", obj_bg_skyline); // Create skyline for background.
+
+
+
 left=true;
 
 section=1;
