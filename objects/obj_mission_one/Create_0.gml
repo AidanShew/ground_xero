@@ -2,12 +2,17 @@ depth=1;
 
 //Create Background
 sprite_prefetch(spr_bg_water_trans);
-sprite_prefetch(spr_bg_skyline_trans);
+sprite_prefetch(spr_bg_cloud);
+sprite_prefetch(spr_bg_cloud_fg);
+sprite_prefetch(spr_bg_cloud_move_down);
+sprite_prefetch(spr_bg_cloud_move_down_fg);
+sprite_prefetch(spr_bg_water_full);
+sprite_prefetch(spr_bg_water_to_sky);
+sprite_prefetch(spr_bg_moon);
 
 instance_create_layer(x,y,"Instances", obj_bg_water); // Create water for background.
-instance_create_layer(x,y,"Instances", obj_bg_skyline); // Create skyline for background.
-
-
+instance_create_layer(x,y,"Instances", obj_bg_cloud_bg); // Create clouds for background.
+instance_create_layer(x,y,"Instances", obj_bg_cloud_fg); // Create clouds for background.
 
 left=true;
 

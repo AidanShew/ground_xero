@@ -39,7 +39,7 @@
   "origin":4,
   "parent":{
     "name":"Power Ups",
-    "path":"folders/Sprites/Power Ups.yy",
+    "path":"folders/Sprites/Legacy/Power Ups.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
