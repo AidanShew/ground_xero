@@ -22,7 +22,7 @@ function tracer_create(move_type, amount=2, speed = 15){
 		enemy.move_type=move_type;
 		
 		//Red value is assigned from input
-		enemy.red=red;
+		//enemy.red=red;
 		
 
 		

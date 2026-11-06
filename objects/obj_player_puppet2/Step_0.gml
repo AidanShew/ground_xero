@@ -1,5 +1,5 @@
 if (go==true) {
-	var random_int=irandom(1000000);
+	var random_int=irandom(50);
 	
 	if (random_int==7) sprite_index=spr_player_legacy_big;
 	else sprite_index=spr_player_puppet2;
@@ -14,7 +14,7 @@ if (go==true) {
 					room_goto(rm_horde);
 					break;
 				case ("story"):
-					room_goto(rm_mission_one);
+					room_goto(rm_cutscene_intro);
 					break;
 			}
 			instance_destroy();
@@ -77,4 +77,3 @@ else {
 		}
 	}
 }
-

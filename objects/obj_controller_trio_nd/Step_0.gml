@@ -45,3 +45,6 @@ if (instance_exists(obj_enemy_soldier)) {
 		direction+=0.5
 	}
 }
+else {
+	instance_destroy(self);
+}
