@@ -1,5 +1,5 @@
 if (!spawned) {
-	//treclops_create();
+	scr_create_enemy_treclops();
 	//create_cross();
 	//create_single_spiral();
 	

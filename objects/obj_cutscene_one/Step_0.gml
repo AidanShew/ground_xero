@@ -1,10 +1,16 @@
+// If beginning cutscene already played, fade_out will be true
 if (fade_out) {
 	if (fade_alpha<=1) fade_alpha+=0.01;
+	
+	// If fade_alpha is at least 1:
 	else {
+		// If line index hasn't iterated through the length of line_alpha:
 		if (line_index < array_length(line_alpha)-1) {
 			line_alpha[line_index] +=0.01;
-	
+			
+			// If line_alpha[line_index] is at least 1
 			if (line_alpha[line_index] >= 1) {
+				// If line_alpha 
 				line_alpha[line_index] = 1;
 				line_index++;
 			}

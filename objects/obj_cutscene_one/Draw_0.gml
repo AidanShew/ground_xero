@@ -12,6 +12,8 @@ if (fade_alpha>=1) {
 		draw_set_font(ft_clean);
 		draw_set_color(make_color_rgb(255, 255, 255));
 		draw_set_alpha(line_alpha[i]);
+		sprite_prefetch(to_load[i]);
+		show_debug_message("Loading...\n"+string(loaded)+"/"+string(array_length(to_load))+" Loaded\n\n");
 		
 		draw_text(room_width/2, room_height/2+(i*40), text_lines[i]);
 	}

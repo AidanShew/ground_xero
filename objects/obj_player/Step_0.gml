@@ -15,14 +15,19 @@
 
 // +--------------MOVEMENT--------------+
 
+var ctrl_left = keyboard_check(ord("A"));
+var ctrl_right = keyboard_check(ord("D"));
+var ctrl_up = keyboard_check(ord("W"));
+var ctrl_down = keyboard_check(ord("S"));
+var ctrl_fire = keyboard_check(ord("I"));
+var ctrl_switch = keyboard_check(ord("J"));
+show_debug_message("Ctrl_switch: "+string(ctrl_switch));
+
 //If negative, player is moving left
-move_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+move_x = ctrl_right - ctrl_left;
 
 //If negative, player is moving up
-move_y = keyboard_check(ord("S")) - keyboard_check(ord("W"));
-
-show_debug_message("Move X: "+string(move_x));
-show_debug_message("Move Y: "+string(move_y));
+move_y = ctrl_down - ctrl_up;
 
 if (move_x < 0) {
 	obj_player_thruster_left.thruster_state = THRUSTER.LEFT;
@@ -93,7 +98,7 @@ else if ((sprite_index == spr_to_red_big) && (image_index >= image_number - 1)) 
 
 // +--------------SHOOTING--------------+
 
-if (keyboard_check(vk_up) && fire_counter++ >= 5 && !megadrive) {
+if (ctrl_fire && fire_counter++ >= 5 && !megadrive) {
 	// Blue sprite is defined before for-loop so both bullets have same sprite.
 	// Bullet sprites are randomly assigned.
 	var blue_sprite = choose(spr_blue_bullet_thick, spr_blue_bullet_med, spr_blue_bullet_thin);
@@ -116,10 +121,18 @@ if (keyboard_check(vk_up) && fire_counter++ >= 5 && !megadrive) {
 	fire_counter=0;
 }
 
-if (keyboard_check(vk_up)) obj_player_guns.sprite_index = red ? spr_player_guns_red_firing : spr_player_guns_blue_firing;
+if (ctrl_fire) obj_player_guns.sprite_index = red ? spr_player_guns_red_firing : spr_player_guns_blue_firing;
 else obj_player_guns.sprite_index = red ? spr_player_red_guns_neutral : spr_player_blue_guns_neutral;
 
+if (ctrl_switch) {
+	show_debug_message("Red Status: "+string(red));
 
+	red = !red;
+	sprite_index = red ? spr_player_red_shell : spr_player_blue_shell;
+
+	image_index = 0;
+	image_speed = 1;
+}
 
 
 // +--------------COMBOS--------------+

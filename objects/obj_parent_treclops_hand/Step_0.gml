@@ -5,7 +5,7 @@ switch (attack_type) {
 		show_debug_message("Hand Attack Type: Calibrate");
 		if (point_distance(x,y, path[0], path[1])<=15) {
 			speed=0;
-			image_angle=left ? 45: 135;
+			image_angle = left ? 45 : 315;
 			fire=true;
 			switch (global.tre_phase) {
 				case (TRECLOPS_PHASE.ONE):

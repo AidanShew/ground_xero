@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_whirlpool",
-    "path":"sprites/spr_whirlpool/spr_whirlpool.yy",
+    "name":"spr_treclops_temp",
+    "path":"sprites/spr_treclops_temp/spr_treclops_temp.yy",
   },
   "spriteMaskId":null,
   "visible":true,

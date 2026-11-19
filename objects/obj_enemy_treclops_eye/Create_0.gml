@@ -1,0 +1,1 @@
+depth = obj_enemy_treclops.depth-1;

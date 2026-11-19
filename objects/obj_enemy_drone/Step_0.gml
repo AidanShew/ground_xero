@@ -1,3 +1,4 @@
+image_angle = direction;
 event_inherited();
 
 switch (move_type) {
