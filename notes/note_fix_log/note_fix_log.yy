@@ -1,5 +1,5 @@
 {
-  "$GMNotes":"v1",
+  "$GMNotes":"v2",
   "%Name":"note_fix_log",
   "name":"note_fix_log",
   "parent":{

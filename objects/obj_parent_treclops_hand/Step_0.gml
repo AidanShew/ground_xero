@@ -1,11 +1,12 @@
-red=!mother.red;
-
+red = !mother.red;
 switch (attack_type) {
 	case (TRECLOPS_ATTACK.CALIBRATE):
 		show_debug_message("Hand Attack Type: Calibrate");
-		if (point_distance(x,y, path[0], path[1])<=15) {
+		if (point_distance(x,y, path[0], path[1])<=5 && (image_angle == 45 || image_angle == 315)) {
 			speed=0;
-			image_angle = left ? 45 : 315;
+			cos_speed_ticker = 0;
+			image_angle_ticker_left = 0;
+			image_angle_ticker_right = 0;
 			fire=true;
 			switch (global.tre_phase) {
 				case (TRECLOPS_PHASE.ONE):
@@ -19,15 +20,24 @@ switch (attack_type) {
 				case (TRECLOPS_PHASE.THREE):
 					if (!left) {
 						attack_type=TRECLOPS_ATTACK.PARTIAL_SPREAD;
-						show_debug_message("Checkpoint");
 					}
 				break;
 			}
 		}
 		else {
+			image_angle_ticker_left += 0.03;
+			image_angle_ticker_left = clamp(image_angle_ticker_left, 0, 1);
+			
+			image_angle_ticker_right += 0.03;
+			image_angle_ticker_right = clamp(image_angle_ticker_right, 0, 1);
+			
+			if (point_distance(x,y,path[0],path[1]) < 50) cos_speed_ticker += 0.1;
+			cos_speed_ticker = clamp(cos_speed_ticker, 0, 1);
+			
 			direction=point_direction(x,y, path[0], path[1]);
 			image_angle=direction;
-			speed=15;
+			speed = lerp(10, 0, cos_speed_ticker) ;
+			image_angle = left ? lerp(0, 45, image_angle_ticker_left) : lerp(360, 315, image_angle_ticker_right);
 		}
 		break;
 		
@@ -78,9 +88,9 @@ switch (attack_type) {
 	show_debug_message("Hand Attack Type: Partial Spread");
 		speed=0;
 		if (global.tre_phase==TRECLOPS_PHASE.ONE) {
-			if (--global.ps_timer<=0) {
-				obj_enemy_treclops_hand_left.attack_type=TRECLOPS_ATTACK.NONE;
-				obj_enemy_treclops_hand_right.attack_type=TRECLOPS_ATTACK.NONE;
+			if (--global.ps_timer <= 0) {
+				obj_enemy_treclops_hand_left.attack_type=TRECLOPS_ATTACK.CALIBRATE;
+				obj_enemy_treclops_hand_right.attack_type=TRECLOPS_ATTACK.CALIBRATE;
 			
 				global.ps_timer=360;
 				global.ss_timer=360;
@@ -98,32 +108,38 @@ switch (attack_type) {
 		attack_hand_swoop(left ? true : false);
 	break;
 		
+		
+	
 	// ***PHASE 2 ATTACKS***
+	
+	// Parial Rain
 	case (TRECLOPS_ATTACK.PARTIAL_RAIN):
 		show_debug_message("Hand Attack Type: Partial Rain");
+		
 		red=!mother.red;
+		
+		bullet_left = left ? !mother.left : mother.left;
+		
 		if (left) {
-			bullet_left=!mother.left;
-			if (point_distance(x,y, path[0]+100, path[1]+100)<=15) {
+			if (point_distance(x,y, x, path[1]) <= 15 && (path[0]-100 <= x && x <= path[0]+100))  {
 				speed=0;
-				if (image_angle!=180) image_angle+=1;
+				if (image_angle!=0) image_angle-=1;
 				else attack_partial_rain(true);
 			}
 			else {
-				direction=point_direction(x,y, path[0]+100, path[1]+100);
-				speed=15;
+				direction=point_direction(x,y, path[0], path[1]);
+				speed=10;
 			}
 		}
 		else {
-			bullet_left=mother.left;
-			if (point_distance(x,y, path[0]-100, path[1]+100)<=15) {
-					speed=0;
-					if (image_angle!=180) image_angle+=1;
-					else attack_partial_rain(true);
-				}
+			if (point_distance(x,y, x, path[1]) <= 15 && (path[0]-100 <= x && x <= path[0]+100)) {
+				speed=0;
+				if (image_angle!=360) image_angle+=1;
+				else attack_partial_rain(true);
+			}
 			else {
-					direction=point_direction(x,y, path[0]-100, path[1]+100);
-					speed=15;
+				direction=point_direction(x,y, path[0], path[1]);
+				speed=10;
 			}
 		}
 	break;
@@ -133,7 +149,6 @@ switch (attack_type) {
 		show_debug_message("Hand Attack Type: Block");
 		if (instance_exists(obj_bullet_player)) {
 			if (point_distance(x,y, obj_bullet_player.x, mother.y+200)<=15) {
-				//attack_spread();
 				speed=0;
 			}
 			else {
@@ -145,7 +160,6 @@ switch (attack_type) {
 		
 		else if (instance_exists(obj_player)) {
 			if (point_distance(x,y, obj_player.x, mother.y+200)<=15) {
-				//attack_spread();
 				speed=0;
 			}
 			else {

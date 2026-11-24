@@ -1,6 +1,8 @@
-if (x>room_width) {
+if (x > room_width) {
 	speed=0;
 	ready=false;
+	x = path[0];
+	y = -150;
 	speed_ticker=0;
 	image_ticker=0;
 	follow_timer=120;

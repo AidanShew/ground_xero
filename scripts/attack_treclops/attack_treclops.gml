@@ -1,7 +1,7 @@
 function attack_treclops(left){
 	if (instance_exists(obj_player)) {
-		if (left) var dir=315;
-		else dir = 225;
+		if (left) var dir=300;
+		else dir = 240;
 	
 		if (fire_counter_two>=10) {
 			for (var i=0; i<10; i++) {

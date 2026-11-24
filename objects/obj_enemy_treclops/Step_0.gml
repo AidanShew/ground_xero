@@ -31,6 +31,16 @@ switch (global.tre_phase) {
 	break;
 	
 	case (TRECLOPS_PHASE.TWO):
+		if (array_length(bullet_star) >= 0) {
+			for (var i = 0; i < array_length(bullet_star); i++) {
+				bullet_star[i].is_thrown = true;
+				array_delete(bullet_star, i, 1);
+				index--;
+			}
+		}
+		throw_timer = 60;
+		bullets_restocked = false;
+		show_debug_message("STAR LENGTH: "+string(array_length(bullet_star)));
 		show_debug_message("Phase 2");
 		tre_calibrate();
 		if (fire) attack_type=TRECLOPS_ATTACK.PARTIAL_RAIN;
@@ -39,11 +49,19 @@ switch (global.tre_phase) {
 	case (TRECLOPS_PHASE.THREE):
 		show_debug_message("Phase 3");
 		tre_calibrate();
+		show_debug_message("STAR LENGTH: "+string(array_length(bullet_star)));
 		if (fire) attack_type=TRECLOPS_ATTACK.STAR;
 	break;
 	
 	case (TRECLOPS_PHASE.FOUR):
 		show_debug_message("Phase 4");
+		if (array_length(bullet_star) >= 0) {
+			for (var i = 0; i < array_length(bullet_star); i++) {
+				bullet_star[i].is_thrown = true;
+				array_delete(bullet_star, i, 1);
+				index--;
+			}
+		}
 		tre_calibrate();
 		if (fire) {
 			if (instance_exists(obj_enemy_treclops_hand_right)&&(obj_enemy_treclops_hand_right.x<x-50||obj_enemy_treclops_hand_right.x>x+50)) attack_type=TRECLOPS_ATTACK.STAR;

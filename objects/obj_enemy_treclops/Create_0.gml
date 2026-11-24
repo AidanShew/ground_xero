@@ -1,4 +1,4 @@
-starting_enemy_health=1000;
+starting_enemy_health=300;
 enemy_health=starting_enemy_health;
 red=false;
 x=room_width/2;
@@ -18,7 +18,7 @@ move_speed=3;
 fire=false;
 index=-1;
 fired=0;
-speed=15;
+speed=5;
 throw_timer=60;
 bullet_star=[];
 bullet_thrown=0;
@@ -41,13 +41,13 @@ firing=false;
 bullet_x=01;
 
 //Health Stuff
-starting_p1_health=750;
-starting_p2_health=500;
-starting_p3_health=500;
+starting_p1_health=100;
+starting_p2_health=100;
+starting_p3_health=100;
 
-phase_one_health=750;
-phase_two_health=500;
-phase_three_health=500;
+phase_one_health=100;
+phase_two_health=100;
+phase_three_health=100;
 
 increase=true;
 increase2=false;

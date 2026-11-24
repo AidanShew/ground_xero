@@ -13,7 +13,6 @@ function attack_star(){
 			}
 			else fire_counter++;
 		}
-		//show_debug_message("Fire Counter: "+string(fire_counter));
 	
 		if (bullets_restocked&&throw_timer<=0) {
 			bullet_star[index].is_thrown=true;
@@ -22,11 +21,5 @@ function attack_star(){
 			throw_timer=60;
 		}
 		else if (bullets_restocked&&throw_timer>0) throw_timer--;
-		/*
-		if (--ss_timer<=0&&(obj_right_hand.attack_type==TRECLOPS_ATTACK.NONE||obj_right_hand.attack_type==TRECLOPS_ATTACK.SIDE_SPREAD)&&(obj_left_hand.attack_type==TRECLOPS_ATTACK.NONE||obj_left_hand.attack_type==TRECLOPS_ATTACK.SIDE_SPREAD)) {
-			obj_right_hand.attack_type=TRECLOPS_ATTACK.PARTIAL_SPREAD;
-			obj_left_hand.attack_type=TRECLOPS_ATTACK.PARTIAL_SPREAD;
-		}
-		*/
 	}
 }

@@ -20,8 +20,7 @@ var ctrl_right = keyboard_check(ord("D"));
 var ctrl_up = keyboard_check(ord("W"));
 var ctrl_down = keyboard_check(ord("S"));
 var ctrl_fire = keyboard_check(ord("I"));
-var ctrl_switch = keyboard_check(ord("J"));
-show_debug_message("Ctrl_switch: "+string(ctrl_switch));
+var ctrl_switch = keyboard_check_released(ord("J"));
 
 //If negative, player is moving left
 move_x = ctrl_right - ctrl_left;
@@ -116,7 +115,7 @@ if (ctrl_fire && fire_counter++ >= 5 && !megadrive) {
 		
 	
 	//var sound = red ? choose(snd_explosion_normal, snd_explosion_low, snd_explosion_lower) : choose(snd_explosion_normal, snd_explosion_high);	
-	audio_play_sound(snd_fire_new, 1, 0);
+	//audio_play_sound(snd_fire_new, 1, 0);
 	
 	fire_counter=0;
 }

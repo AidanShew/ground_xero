@@ -5,10 +5,18 @@ fire_counter=0;
 fire_counter_two=0;
 enemy_health=300;
 fire=false;
-speed=15;
 attack_type=TRECLOPS_ATTACK.CALIBRATE;
 phase=TRECLOPS_PHASE.ONE;
+
+// Image Angle Stuff
 image_angle=0;
+image_angle_ticker_left = 0;
+image_angle_ticker_right = 0;
+
+// Speed Stuff
+speed=15;
+cos_speed_ticker = 0;
+
 
 //Hand Swoop Stuff
 global.hs_timer=120; //Hand Swoop Timer

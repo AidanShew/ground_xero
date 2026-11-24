@@ -44,11 +44,11 @@
     {"$GMFolder":"","%Name":"Single Spiral","folderPath":"folders/Scripts/Enemy Movement/Single Spiral.yy","name":"Single Spiral","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Swoop","folderPath":"folders/Scripts/Enemy Movement/Swoop.yy","name":"Swoop","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tracer","folderPath":"folders/Scripts/Enemy Movement/Tracer.yy","name":"Tracer","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Treclops","folderPath":"folders/Scripts/Enemy Movement/Treclops.yy","name":"Treclops","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Attack","folderPath":"folders/Scripts/Enemy Movement/Treclops/Attack.yy","name":"Attack","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Trio","folderPath":"folders/Scripts/Enemy Movement/Trio.yy","name":"Trio","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Misc.","folderPath":"folders/Scripts/Misc..yy","name":"Misc.","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player Puppet","folderPath":"folders/Scripts/Player Puppet.yy","name":"Player Puppet","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Treclops","folderPath":"folders/Scripts/Treclops.yy","name":"Treclops","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Attack","folderPath":"folders/Scripts/Treclops/Attack.yy","name":"Attack","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"User Interface","folderPath":"folders/Scripts/User Interface.yy","name":"User Interface","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sequences","folderPath":"folders/Sequences.yy","name":"Sequences","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Shaders","folderPath":"folders/Shaders.yy","name":"Shaders","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -114,7 +114,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2026.1.0.27",
   },
   "name":"Far From Eden Ground Xero",
   "resources":[

@@ -14,8 +14,8 @@ function attack_partial_rain(hands){
 				bullet.speed=25
 			}
 			else {
-				
-				var bullet_x=other.bullet_left ? (x+15)+(i*50) : (x-15)-(i*50);
+				var bullet_x=other.bullet_left ? (path[0]+15)+(i*50) : (path[0]-15)-(i*50);
+				x = other.bullet_left ? path[0]+65 : path[0]-65;
 				
 				var bullet=instance_create_layer(
 				bullet_x,

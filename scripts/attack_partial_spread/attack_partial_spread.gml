@@ -2,20 +2,24 @@ function attack_partial_spread(left){
 	if (instance_exists(obj_player)) {
 		if (left) {
 			if (increase) {
+				image_angle +=0.5;
 				if (dir>=360) increase=false;
 				else dir+=0.5;
 			}
 			else {
+				image_angle -= 0.5;
 				if (dir<=292) increase=true;
 				else dir-=0.5;
 			}
 		}
 		else {
 			if (increase) {
+				image_angle += 0.5;
 				if (dir>=247) increase=false;
 				else dir+=0.5;
 			}
 			else {
+				image_angle -=0.5;
 				if (dir<=180) increase=true;
 				else dir-=0.5;
 			}
